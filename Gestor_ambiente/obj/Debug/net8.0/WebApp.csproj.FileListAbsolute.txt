@@ -1,0 +1,6 @@
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\obj\Debug\net8.0\WebApp.csproj.AssemblyReference.cache
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\obj\Debug\net8.0\WebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\obj\Debug\net8.0\WebApp.AssemblyInfoInputs.cache
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\obj\Debug\net8.0\WebApp.AssemblyInfo.cs
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\obj\Debug\net8.0\WebApp.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\obj\Debug\net8.0\WebApp.MvcApplicationPartsAssemblyInfo.cache

@@ -1,0 +1,155 @@
+﻿using Entity.Dto.Security;
+using Entity.Dto;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using WebA.Controllers.Interfaces.Security;
+using Service.Interfaces.Security;
+
+namespace WebA.Controllers.Implements.Security
+{
+    [Route("api/User")]
+    [ApiController]
+    public class UserController : ControllerBase, IUserController
+    {
+        private readonly IUserService business;
+
+        public UserController(IUserService business)
+        {
+            this.business = business;
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<ApiResponse<UserDto>>> Get(int id)
+        {
+            var result = await business.GetById(id);
+            if (result == null)
+            {
+                return NotFound();
+            }
+            return Ok(result);
+        }
+
+        [HttpPost("/password")]
+        public async Task<ActionResult<ApiResponse<PasswordDto>>> GetByEmail([FromBody] RecoveryDto email)
+        {
+            if (email == null)
+            {
+                return BadRequest("Email is null");
+            }
+            var result = business.GetByEmail(email.email);
+            return CreatedAtAction(nameof(GetByEmail), new { data = result });
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<ApiResponse<IEnumerable<UserDto>>>> GetAll()
+        {
+            var result = await business.GetAll();
+            return Ok(result);
+        }
+
+        [HttpGet("byRole/{id}")]
+        public async Task<ActionResult<ApiResponse<IEnumerable<UserDto>>>> GetAllByRole(int id)
+        {
+            var result = await business.GetAllByRole(id);
+            return Ok(result);
+        }
+
+        [HttpPost("/login")]
+        public async Task<ActionResult> Login(AuthenticationDto dto)
+        {
+            if (dto == null)
+            {
+                return BadRequest("Entity is null");
+            }
+            var result = await business.Login(dto);
+            if (result.IsNullOrEmpty())
+            {
+                return BadRequest("User no registrado");
+            }
+            return CreatedAtAction(nameof(Login), new { menu = result });
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> Post([FromBody] UserDto user)
+        {
+            if (user == null)
+            {
+                return BadRequest("Entity is null");
+            }
+            var result = await business.Save(user);
+            return CreatedAtAction(nameof(Get), new { id = result.Id }, result);
+        }
+
+        [HttpPut]
+        public async Task<ActionResult> Put([FromBody] UserDto user)
+        {
+            if (user == null)
+            {
+                return BadRequest();
+            }
+            await business.Update(user);
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            await business.Delete(id);
+            return NoContent();
+        }
+
+        [HttpGet("AllSelect")]
+        public async Task<ActionResult<ApiResponse<IEnumerable<DataSelectDto>>>> GetAllSelect()
+        {
+            var result = await business.GetAllSelect();
+            return Ok(result);
+        }
+
+        [HttpPatch]
+        public async Task<ActionResult> Patch([FromBody] UserDto user)
+        {
+            if (user == null)
+            {
+                return BadRequest("Entity is null");
+            }
+
+            var existingUser = await business.GetById(user.Id);
+            if (existingUser == null)
+            {
+                return NotFound();
+            }
+
+            // Lógica para actualizar los campos específicos
+            if (!string.IsNullOrEmpty(user.Username))
+            {
+                existingUser.Username = user.Username;
+            }
+
+            if (!string.IsNullOrEmpty(user.Password))
+            {
+                existingUser.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);  // Asegúrate de encriptar la contraseña
+            }
+
+            if (!string.IsNullOrEmpty(user.PhotoBase64))
+            {
+                try
+                {
+                    existingUser.Photo = Convert.FromBase64String(user.PhotoBase64);
+                }
+                catch (FormatException)
+                {
+                    return BadRequest("La imagen proporcionada no tiene un formato base64 válido.");
+                }
+            }
+
+
+            // Aquí puedes añadir más condiciones para otros campos que desees actualizar
+
+            // Guardamos los cambios
+            await business.Update(existingUser);
+
+            return NoContent();
+        }
+
+    }
+}

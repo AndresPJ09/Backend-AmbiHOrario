@@ -1,0 +1,60 @@
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.csproj.AssemblyReference.cache
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.AssemblyInfoInputs.cache
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.AssemblyInfo.cs
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Repository\bin\Debug\net8.0\Repository.deps.json
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Repository\bin\Debug\net8.0\Repository.dll
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Repository\bin\Debug\net8.0\Repository.pdb
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Repository\bin\Debug\net8.0\Entity.dll
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Repository\bin\Debug\net8.0\Entity.pdb
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.csproj.AssemblyReference.cache
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.AssemblyInfoInputs.cache
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.AssemblyInfo.cs
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.csproj.Up2Date
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.dll
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Repository\obj\Debug\net8.0\refint\Repository.dll
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.pdb
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Repository\obj\Debug\net8.0\ref\Repository.dll
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Repository\bin\Debug\net8.0\Repository.deps.json
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Repository\bin\Debug\net8.0\Repository.dll
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Repository\bin\Debug\net8.0\Repository.pdb
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Repository\bin\Debug\net8.0\Entity.dll
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Repository\bin\Debug\net8.0\Entity.pdb
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.csproj.Up2Date
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.dll
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Repository\obj\Debug\net8.0\refint\Repository.dll
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.pdb
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Repository\obj\Debug\net8.0\ref\Repository.dll
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Repository\bin\Debug\net8.0\Repository.deps.json
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Repository\bin\Debug\net8.0\Repository.dll
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Repository\bin\Debug\net8.0\Repository.pdb
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Repository\bin\Debug\net8.0\Entity.dll
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Repository\bin\Debug\net8.0\Entity.pdb
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.csproj.AssemblyReference.cache
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.AssemblyInfoInputs.cache
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.AssemblyInfo.cs
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.csproj.Up2Date
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.dll
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Repository\obj\Debug\net8.0\refint\Repository.dll
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.pdb
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Repository\obj\Debug\net8.0\ref\Repository.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\bin\Debug\net8.0\Repository.deps.json
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\bin\Debug\net8.0\Repository.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\bin\Debug\net8.0\Repository.pdb
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\bin\Debug\net8.0\Entity.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\bin\Debug\net8.0\Entity.pdb
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.csproj.AssemblyReference.cache
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.AssemblyInfoInputs.cache
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.AssemblyInfo.cs
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.csproj.Up2Date
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8.0\refint\Repository.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.pdb
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8.0\ref\Repository.dll

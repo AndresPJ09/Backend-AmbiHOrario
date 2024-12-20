@@ -1,0 +1,37 @@
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.AssemblyInfoInputs.cache
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.AssemblyInfo.cs
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Utilities\bin\Debug\net8.0\Utilities.deps.json
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Utilities\bin\Debug\net8.0\Utilities.dll
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Utilities\bin\Debug\net8.0\Utilities.pdb
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.AssemblyInfoInputs.cache
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.AssemblyInfo.cs
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.dll
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Utilities\obj\Debug\net8.0\refint\Utilities.dll
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.pdb
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Utilities\obj\Debug\net8.0\ref\Utilities.dll
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Utilities\bin\Debug\net8.0\Utilities.deps.json
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Utilities\bin\Debug\net8.0\Utilities.dll
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Utilities\bin\Debug\net8.0\Utilities.pdb
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.AssemblyInfoInputs.cache
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.AssemblyInfo.cs
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.dll
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Utilities\obj\Debug\net8.0\refint\Utilities.dll
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.pdb
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Utilities\obj\Debug\net8.0\ref\Utilities.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Utilities\bin\Debug\net8.0\Utilities.deps.json
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Utilities\bin\Debug\net8.0\Utilities.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Utilities\bin\Debug\net8.0\Utilities.pdb
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.AssemblyInfoInputs.cache
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.AssemblyInfo.cs
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Utilities\obj\Debug\net8.0\refint\Utilities.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Utilities\obj\Debug\net8.0\Utilities.pdb
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Utilities\obj\Debug\net8.0\ref\Utilities.dll

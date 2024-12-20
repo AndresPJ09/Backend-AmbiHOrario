@@ -1,0 +1,68 @@
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Service\obj\Debug\net8.0\Service.csproj.AssemblyReference.cache
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Service\obj\Debug\net8.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Service\obj\Debug\net8.0\Service.AssemblyInfoInputs.cache
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Service\obj\Debug\net8.0\Service.AssemblyInfo.cs
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Service\obj\Debug\net8.0\Service.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Service\bin\Debug\net8.0\Service.deps.json
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Service\bin\Debug\net8.0\Service.dll
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Service\bin\Debug\net8.0\Service.pdb
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Service\bin\Debug\net8.0\Entity.dll
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Service\bin\Debug\net8.0\Repository.dll
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Service\bin\Debug\net8.0\Entity.pdb
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Service\bin\Debug\net8.0\Repository.pdb
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Service\obj\Debug\net8.0\Service.csproj.AssemblyReference.cache
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Service\obj\Debug\net8.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Service\obj\Debug\net8.0\Service.AssemblyInfoInputs.cache
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Service\obj\Debug\net8.0\Service.AssemblyInfo.cs
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Service\obj\Debug\net8.0\Service.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Service\obj\Debug\net8.0\Service.csproj.Up2Date
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Service\obj\Debug\net8.0\Service.dll
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Service\obj\Debug\net8.0\refint\Service.dll
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Service\obj\Debug\net8.0\Service.pdb
+C:\Users\SENA\Desktop\Frontend - copia\Gestor_ambiente\Service\obj\Debug\net8.0\ref\Service.dll
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Service\bin\Debug\net8.0\Service.deps.json
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Service\bin\Debug\net8.0\Service.dll
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Service\bin\Debug\net8.0\Service.pdb
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Service\bin\Debug\net8.0\Entity.dll
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Service\bin\Debug\net8.0\Repository.dll
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Service\bin\Debug\net8.0\Entity.pdb
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Service\bin\Debug\net8.0\Repository.pdb
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Service\obj\Debug\net8.0\Service.csproj.Up2Date
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Service\obj\Debug\net8.0\Service.dll
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Service\obj\Debug\net8.0\refint\Service.dll
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Service\obj\Debug\net8.0\Service.pdb
+C:\Users\SENA\Desktop\Frontend\Gestor_ambiente\Service\obj\Debug\net8.0\ref\Service.dll
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Service\bin\Debug\net8.0\Service.deps.json
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Service\bin\Debug\net8.0\Service.dll
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Service\bin\Debug\net8.0\Service.pdb
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Service\bin\Debug\net8.0\Entity.dll
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Service\bin\Debug\net8.0\Repository.dll
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Service\bin\Debug\net8.0\Entity.pdb
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Service\bin\Debug\net8.0\Repository.pdb
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Service\obj\Debug\net8.0\Service.csproj.AssemblyReference.cache
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Service\obj\Debug\net8.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Service\obj\Debug\net8.0\Service.AssemblyInfoInputs.cache
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Service\obj\Debug\net8.0\Service.AssemblyInfo.cs
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Service\obj\Debug\net8.0\Service.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Service\obj\Debug\net8.0\Service.csproj.Up2Date
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Service\obj\Debug\net8.0\Service.dll
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Service\obj\Debug\net8.0\refint\Service.dll
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Service\obj\Debug\net8.0\Service.pdb
+C:\Users\SENA\Desktop\Software Desarrollo\Backend\Gestor_ambiente\Service\obj\Debug\net8.0\ref\Service.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Service\bin\Debug\net8.0\Service.deps.json
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Service\bin\Debug\net8.0\Service.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Service\bin\Debug\net8.0\Service.pdb
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Service\bin\Debug\net8.0\Entity.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Service\bin\Debug\net8.0\Repository.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Service\bin\Debug\net8.0\Entity.pdb
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Service\bin\Debug\net8.0\Repository.pdb
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Service\obj\Debug\net8.0\Service.csproj.AssemblyReference.cache
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Service\obj\Debug\net8.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Service\obj\Debug\net8.0\Service.AssemblyInfoInputs.cache
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Service\obj\Debug\net8.0\Service.AssemblyInfo.cs
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Service\obj\Debug\net8.0\Service.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Service\obj\Debug\net8.0\Service.csproj.Up2Date
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Service\obj\Debug\net8.0\Service.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Service\obj\Debug\net8.0\refint\Service.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Service\obj\Debug\net8.0\Service.pdb
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Service\obj\Debug\net8.0\ref\Service.dll
