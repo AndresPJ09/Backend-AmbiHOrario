@@ -617,6 +617,7 @@ C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\WebA\obj\Debug\net8.0\Web
 C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\WebA\obj\Debug\net8.0\WebA.csproj.CoreCompileInputs.cache
 C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\WebA\obj\Debug\net8.0\WebA.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\WebA\obj\Debug\net8.0\WebA.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\WebA\obj\Debug\net8.0\WebA.sourcelink.json
 C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\WebA\obj\Debug\net8.0\scopedcss\bundle\WebA.styles.css
 C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\WebA\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\WebA\obj\Debug\net8.0\staticwebassets.development.json

@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using Entity.Model;
+using Entity.Model.Parameter;
 using Entity.Model.Security;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
@@ -92,6 +93,13 @@ namespace Entity.Context
         public DbSet<UserRole> UserRoles => Set<UserRole>();
         public DbSet<View> Views => Set<View>();
 
+
+        //Paramaeter
+        public DbSet<Instructor> Instructores => Set<Instructor>();
+        public DbSet<Nivel> Niveles => Set<Nivel>();
+        public DbSet<Programa> Programas => Set<Programa>();
+        public DbSet<Competencia> Competencias => Set<Competencia>();
+        public DbSet<Ambiente> Ambientes => Set<Ambiente>();
 
         //Operational
 

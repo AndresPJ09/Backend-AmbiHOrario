@@ -53,6 +53,7 @@ C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8
 C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.AssemblyInfoInputs.cache
 C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.AssemblyInfo.cs
 C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.sourcelink.json
 C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.csproj.Up2Date
 C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8.0\Repository.dll
 C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Repository\obj\Debug\net8.0\refint\Repository.dll

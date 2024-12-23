@@ -8,8 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Model\Operational\" />
-    <Folder Include="Model\Parameter\" />
+    <Folder Include="Dto\Operational\" />
   </ItemGroup>
 
   <ItemGroup>

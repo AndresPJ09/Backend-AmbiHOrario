@@ -7,6 +7,10 @@ using Repository.Interfaces.Security;
 using Entity.Context;
 using Entity.Dto.Security;
 using Microsoft.EntityFrameworkCore;
+using Repository.Interfaces.Parameter;
+using Repository.Implements.Parameter;
+using Service.Interfaces.Parameter;
+using Service.Implements.Parameter;
 
 namespace WebA
 {
@@ -41,6 +45,11 @@ namespace WebA
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<IUserRoleRepository, UserRoleRepository>();
             builder.Services.AddScoped<IViewRepository, ViewRepository>();
+            builder.Services.AddScoped<IInstructorRepository, InstructorRepository>();
+            builder.Services.AddScoped<INivelRepositoy, NivelRepository>();
+            builder.Services.AddScoped<ICompetenciaRepositoy, CompetenciaRespository>();
+            builder.Services.AddScoped<IProgramaRepositoy, ProgramaRepository>();
+            builder.Services.AddScoped<IAmbienteRepositoy, AmbienteRepository>();
 
             //Configuracion de Service I,S
             builder.Services.AddScoped<IModuleService, ModuleService>();
@@ -51,7 +60,11 @@ namespace WebA
             builder.Services.AddScoped<IUserRoleService, UserRoleService>();
             builder.Services.AddScoped<IViewService, ViewService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
-
+            builder.Services.AddScoped<IInstructorService, InstructorService>();
+            builder.Services.AddScoped<INivelService, NivelService>();
+            builder.Services.AddScoped<ICompetenciaService, CompetenciaService>();
+            builder.Services.AddScoped<IProgramaService, ProgramaService>();
+            builder.Services.AddScoped<IAmbienteService, AmbienteService>();
 
             // Add services to the container.
             builder.Services.AddControllers();
