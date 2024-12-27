@@ -9,6 +9,7 @@ using System;
 using Microsoft.Identity.Client;
 using System.Text.Json;
 using static Dapper.SqlMapper;
+using Microsoft.EntityFrameworkCore;
 
 namespace Service.Implements.Security
 {
@@ -212,6 +213,12 @@ namespace Service.Implements.Security
             {
                 throw new Exception("Registro no encontrado");
             }
+
+            // Validación de la contraseña actual
+            if (!BCrypt.Net.BCrypt.Verify(entity.Password, user.Password))
+            {
+                throw new Exception("La contraseña actual es incorrecta");
+            }
             user = mapearDatos(user, entity);
             user.UpdatedAt = DateTime.Now;
 
@@ -290,7 +297,29 @@ namespace Service.Implements.Security
             {
                 user.Photo = null;
             }
-            user.Username = entity.Username;
+            if (!string.IsNullOrEmpty(entity.Username))
+            {
+                // Si se pasa un nuevo username, lo asignamos
+                user.Username = entity.Username;
+            }
+            // Validación del password
+            if (!string.IsNullOrEmpty(entity.Password))
+            {
+                user.Password = BCrypt.Net.BCrypt.HashPassword(entity.Password);
+            }
+            else
+            {
+                // Mantener el password actual si no se envía uno nuevo
+                user.Password = user.Password;
+            }
+            user.PersonId = entity.PersonId;
+            user.State = entity.State;
+            return user;
+        }
+
+        public User cambioContraseña(User user, UserDto entity)
+        {
+            user.Id = entity.Id;
             user.Password = BCrypt.Net.BCrypt.HashPassword(entity.Password);
             user.PersonId = entity.PersonId;
             user.State = entity.State;
@@ -327,5 +356,33 @@ namespace Service.Implements.Security
 
             return menuDtos;
         }
+
+        public async Task Patch(UserDto entity)
+        {
+            User user = await data.GetById(entity.Id);
+            if (user == null)
+            {
+                throw new Exception("Registro no encontrado");
+            }
+            user = cambioContraseña(user, entity);
+            user.UpdatedAt = DateTime.Now;
+
+            await userRoleService.DeleteRoles(user.Id);
+
+            if (entity.Roles != null && entity.Roles.Count > 0)
+            {
+                foreach (var role in entity.Roles)
+                {
+                    UserRoleDto userole = new UserRoleDto();
+                    userole.UserId = user.Id;
+                    userole.RoleId = role.Id;
+                    userole.State = true;
+                    await userRoleService.Save(userole);
+                }
+            }
+
+            await data.Update(user);
+        }
+
     }
 }

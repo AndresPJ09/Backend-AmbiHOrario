@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using WebA.Controllers.Interfaces.Security;
 using Service.Interfaces.Security;
+using Service.Implements.Security;
 
 namespace WebA.Controllers.Implements.Security
 {
@@ -118,35 +119,13 @@ namespace WebA.Controllers.Implements.Security
             {
                 return NotFound();
             }
-
-            // Lógica para actualizar los campos específicos
-            if (!string.IsNullOrEmpty(user.Username))
-            {
-                existingUser.Username = user.Username;
-            }
-
+     
             if (!string.IsNullOrEmpty(user.Password))
             {
-                existingUser.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);  // Asegúrate de encriptar la contraseña
+                existingUser.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
             }
 
-            if (!string.IsNullOrEmpty(user.PhotoBase64))
-            {
-                try
-                {
-                    existingUser.Photo = Convert.FromBase64String(user.PhotoBase64);
-                }
-                catch (FormatException)
-                {
-                    return BadRequest("La imagen proporcionada no tiene un formato base64 válido.");
-                }
-            }
-
-
-            // Aquí puedes añadir más condiciones para otros campos que desees actualizar
-
-            // Guardamos los cambios
-            await business.Update(existingUser);
+            await business.Patch(existingUser);
 
             return NoContent();
         }

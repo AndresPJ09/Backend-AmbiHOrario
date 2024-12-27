@@ -19,5 +19,7 @@ namespace Repository.Interfaces.Security
         Task<User> GetByPassword(string password);
         Task<IEnumerable<LoginDto>> Login(string username);
         Task<IEnumerable<DataSelectDto>> GetAllSelect();
+
+        Task Patch(User entity);
     }
 }

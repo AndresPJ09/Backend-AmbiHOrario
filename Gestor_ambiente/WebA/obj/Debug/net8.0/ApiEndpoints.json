@@ -1,5 +1,347 @@
 [
   {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.AmbienteController",
+    "Method": "GetAll",
+    "RelativePath": "api/Ambiente",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[Entity.Dto.Parameter.AmbienteDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.AmbienteController",
+    "Method": "Post",
+    "RelativePath": "api/Ambiente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ambiente",
+        "Type": "Entity.Dto.Parameter.AmbienteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.AmbienteController",
+    "Method": "Put",
+    "RelativePath": "api/Ambiente",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ambiente",
+        "Type": "Entity.Dto.Parameter.AmbienteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.AmbienteController",
+    "Method": "Get",
+    "RelativePath": "api/Ambiente/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[Entity.Dto.Parameter.AmbienteDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.AmbienteController",
+    "Method": "Delete",
+    "RelativePath": "api/Ambiente/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.AmbienteController",
+    "Method": "GetAllSelect",
+    "RelativePath": "api/Ambiente/AllSelect",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[Entity.Dto.DataSelectDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.CompetenciaController",
+    "Method": "GetAll",
+    "RelativePath": "api/Competencia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[Entity.Dto.Parameter.CompetenciaDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.CompetenciaController",
+    "Method": "Post",
+    "RelativePath": "api/Competencia",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "competencia",
+        "Type": "Entity.Dto.Parameter.CompetenciaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.CompetenciaController",
+    "Method": "Put",
+    "RelativePath": "api/Competencia",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "competencia",
+        "Type": "Entity.Dto.Parameter.CompetenciaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.CompetenciaController",
+    "Method": "Get",
+    "RelativePath": "api/Competencia/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[Entity.Dto.Parameter.CompetenciaDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.CompetenciaController",
+    "Method": "Delete",
+    "RelativePath": "api/Competencia/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.CompetenciaController",
+    "Method": "GetAllSelect",
+    "RelativePath": "api/Competencia/AllSelect",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[Entity.Dto.DataSelectDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.InstructorController",
+    "Method": "GetAll",
+    "RelativePath": "api/Instructor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[Entity.Dto.Parameter.InstructorDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.InstructorController",
+    "Method": "Post",
+    "RelativePath": "api/Instructor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instructor",
+        "Type": "Entity.Dto.Parameter.InstructorDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.InstructorController",
+    "Method": "Put",
+    "RelativePath": "api/Instructor",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instructor",
+        "Type": "Entity.Dto.Parameter.InstructorDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.InstructorController",
+    "Method": "Get",
+    "RelativePath": "api/Instructor/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[Entity.Dto.Parameter.InstructorDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.InstructorController",
+    "Method": "Delete",
+    "RelativePath": "api/Instructor/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.InstructorController",
+    "Method": "GetAllSelect",
+    "RelativePath": "api/Instructor/AllSelect",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[Entity.Dto.DataSelectDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebA.Controllers.Implements.Security.ModuleController",
     "Method": "GetAll",
     "RelativePath": "api/Module",
@@ -114,6 +456,120 @@
     ]
   },
   {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.NivelController",
+    "Method": "GetAll",
+    "RelativePath": "api/Nivel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[Entity.Dto.Parameter.NivelDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.NivelController",
+    "Method": "Post",
+    "RelativePath": "api/Nivel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nivel",
+        "Type": "Entity.Dto.Parameter.NivelDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.NivelController",
+    "Method": "Put",
+    "RelativePath": "api/Nivel",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nivel",
+        "Type": "Entity.Dto.Parameter.NivelDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.NivelController",
+    "Method": "Get",
+    "RelativePath": "api/Nivel/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[Entity.Dto.Parameter.NivelDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.NivelController",
+    "Method": "Delete",
+    "RelativePath": "api/Nivel/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.NivelController",
+    "Method": "GetAllSelect",
+    "RelativePath": "api/Nivel/AllSelect",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[Entity.Dto.DataSelectDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebA.Controllers.Implements.Security.PersonController",
     "Method": "GetAll",
     "RelativePath": "api/Person",
@@ -211,6 +667,120 @@
     "ContainingType": "WebA.Controllers.Implements.Security.PersonController",
     "Method": "GetAllSelect",
     "RelativePath": "api/Person/AllSelect",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[Entity.Dto.DataSelectDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.PorgramaController",
+    "Method": "GetAll",
+    "RelativePath": "api/Programa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[Entity.Dto.Parameter.ProgramaDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.PorgramaController",
+    "Method": "Post",
+    "RelativePath": "api/Programa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "programa",
+        "Type": "Entity.Dto.Parameter.ProgramaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.PorgramaController",
+    "Method": "Put",
+    "RelativePath": "api/Programa",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "programa",
+        "Type": "Entity.Dto.Parameter.ProgramaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.PorgramaController",
+    "Method": "Get",
+    "RelativePath": "api/Programa/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[Entity.Dto.Parameter.ProgramaDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.PorgramaController",
+    "Method": "Delete",
+    "RelativePath": "api/Programa/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.PorgramaController",
+    "Method": "GetAllSelect",
+    "RelativePath": "api/Programa/AllSelect",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

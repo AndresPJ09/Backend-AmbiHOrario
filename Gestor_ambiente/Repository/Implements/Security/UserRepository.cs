@@ -13,7 +13,7 @@ using Repository.Interfaces.Security;
 
 namespace Repository.Implements.Security
 {
-    public class UserRepository: IUserRepository
+    public class UserRepository : IUserRepository
     {
         private readonly ApplicationDBContext context;
         protected readonly IConfiguration configuration;
@@ -208,6 +208,12 @@ namespace Repository.Implements.Security
             ";
 
             return await context.QueryAsync<LoginDto>(sql, new { Username = username });
+        }
+
+        public async Task Patch(User entity)
+        {
+            context.Entry(entity).State = EntityState.Modified;
+            await context.SaveChangesAsync();
         }
     }
 }

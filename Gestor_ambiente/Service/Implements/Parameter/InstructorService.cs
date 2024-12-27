@@ -35,6 +35,7 @@ namespace Service.Implements.Parameter
             instructorDto.Especialidad = instructor.Especialidad;
             instructorDto.Correo = instructor.Correo;
             instructorDto.Fecha_inicio = instructor.Fecha_inicio;
+            instructorDto.Periodo = instructor.Periodo;
             instructorDto.Hora_ingreso = instructor.Hora_ingreso;
             instructorDto.Hora_egreso = instructor.Hora_egreso;
             instructorDto.State = instructor.State;
@@ -55,6 +56,7 @@ namespace Service.Implements.Parameter
                 Especialidad = instructor.Especialidad,
                 Correo = instructor.Correo,
                 Fecha_inicio = instructor.Fecha_inicio,
+                Periodo = instructor.Periodo,
                 Hora_ingreso = instructor.Hora_ingreso,
                 Hora_egreso = instructor.Hora_egreso,
                 State = instructor.State,
@@ -103,6 +105,7 @@ namespace Service.Implements.Parameter
             instructor.Especialidad = entity.Especialidad;
             instructor.Correo = entity.Correo;
             instructor.Fecha_inicio = entity.Fecha_inicio;
+            instructor.Periodo = entity.Periodo;
             instructor.Hora_ingreso = entity.Hora_ingreso;
             instructor.Hora_egreso = entity.Hora_egreso;
             instructor.State = entity.State;
