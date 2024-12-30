@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\service\\implements\\security\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|solutionrelative:service\\implements\\security\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\dto\\parameter\\instructordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\dto\\parameter\\instructordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{092F48B0-F961-4EC2-864F-0C4F54B3B840}|WebA\\WebA.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\weba\\controllers\\implements\\security\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{092F48B0-F961-4EC2-864F-0C4F54B3B840}|WebA\\WebA.csproj|solutionrelative:weba\\controllers\\implements\\security\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\service\\interfaces\\security\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|solutionrelative:service\\interfaces\\security\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E334FEDC-DD37-47E1-8D06-94C77C902CAC}|Repository\\Repository.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\repository\\implements\\security\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E334FEDC-DD37-47E1-8D06-94C77C902CAC}|Repository\\Repository.csproj|solutionrelative:repository\\implements\\security\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\dto\\security\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\dto\\security\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\dto\\security\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\dto\\security\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E334FEDC-DD37-47E1-8D06-94C77C902CAC}|Repository\\Repository.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\repository\\interfaces\\security\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E334FEDC-DD37-47E1-8D06-94C77C902CAC}|Repository\\Repository.csproj|solutionrelative:repository\\interfaces\\security\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\model\\parameter\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\model\\parameter\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\model\\security\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\model\\security\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\service\\implements\\parameter\\instructorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|solutionrelative:service\\implements\\parameter\\instructorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{092F48B0-F961-4EC2-864F-0C4F54B3B840}|WebA\\WebA.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\weba\\controllers\\implements\\parameter\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{092F48B0-F961-4EC2-864F-0C4F54B3B840}|WebA\\WebA.csproj|solutionrelative:weba\\controllers\\implements\\parameter\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E334FEDC-DD37-47E1-8D06-94C77C902CAC}|Repository\\Repository.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\repository\\implements\\parameter\\instructorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E334FEDC-DD37-47E1-8D06-94C77C902CAC}|Repository\\Repository.csproj|solutionrelative:repository\\implements\\parameter\\instructorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ChangePasswordDto.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Security\\ChangePasswordDto.cs",
-              "RelativeDocumentMoniker": "Entity\\Dto\\Security\\ChangePasswordDto.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Security\\ChangePasswordDto.cs",
-              "RelativeToolTip": "Entity\\Dto\\Security\\ChangePasswordDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T20:48:34.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\WebA\\Controllers\\Implements\\Security\\UserController.cs",
-              "RelativeDocumentMoniker": "WebA\\Controllers\\Implements\\Security\\UserController.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\WebA\\Controllers\\Implements\\Security\\UserController.cs",
-              "RelativeToolTip": "WebA\\Controllers\\Implements\\Security\\UserController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAYwGsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T14:19:02.31Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Service\\Implements\\Security\\UserService.cs",
-              "RelativeDocumentMoniker": "Service\\Implements\\Security\\UserService.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Service\\Implements\\Security\\UserService.cs",
-              "RelativeToolTip": "Service\\Implements\\Security\\UserService.cs",
-              "ViewState": "AgIAABUBAAAAAAAAAAAYwCkBAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T14:11:56.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Service\\Interfaces\\Security\\IUserService.cs",
-              "RelativeDocumentMoniker": "Service\\Interfaces\\Security\\IUserService.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Service\\Interfaces\\Security\\IUserService.cs",
-              "RelativeToolTip": "Service\\Interfaces\\Security\\IUserService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T14:36:20.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Repository\\Implements\\Security\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Implements\\Security\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Repository\\Implements\\Security\\UserRepository.cs",
-              "RelativeToolTip": "Repository\\Implements\\Security\\UserRepository.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAuwNgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T19:50:11.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Repository\\Interfaces\\Security\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Interfaces\\Security\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Repository\\Interfaces\\Security\\IUserRepository.cs",
-              "RelativeToolTip": "Repository\\Interfaces\\Security\\IUserRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T14:38:31.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Security\\UserDto.cs",
-              "RelativeDocumentMoniker": "Entity\\Dto\\Security\\UserDto.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Security\\UserDto.cs",
-              "RelativeToolTip": "Entity\\Dto\\Security\\UserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T14:11:14.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Security\\User.cs",
               "RelativeDocumentMoniker": "Entity\\Model\\Security\\User.cs",
               "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Security\\User.cs",
               "RelativeToolTip": "Entity\\Model\\Security\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T14:11:10.315Z",
+              "WhenOpened": "2024-12-30T16:53:54.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InstructorController.cs",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\WebA\\Controllers\\Implements\\Parameter\\InstructorController.cs",
+              "RelativeDocumentMoniker": "WebA\\Controllers\\Implements\\Parameter\\InstructorController.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\WebA\\Controllers\\Implements\\Parameter\\InstructorController.cs",
+              "RelativeToolTip": "WebA\\Controllers\\Implements\\Parameter\\InstructorController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T16:31:21.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InstructorService.cs",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Service\\Implements\\Parameter\\InstructorService.cs",
+              "RelativeDocumentMoniker": "Service\\Implements\\Parameter\\InstructorService.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Service\\Implements\\Parameter\\InstructorService.cs",
+              "RelativeToolTip": "Service\\Implements\\Parameter\\InstructorService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T16:31:18.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InstructorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Repository\\Implements\\Parameter\\InstructorRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Implements\\Parameter\\InstructorRepository.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Repository\\Implements\\Parameter\\InstructorRepository.cs",
+              "RelativeToolTip": "Repository\\Implements\\Parameter\\InstructorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T16:31:15.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Instructor.cs",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Parameter\\Instructor.cs",
+              "RelativeDocumentMoniker": "Entity\\Model\\Parameter\\Instructor.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Parameter\\Instructor.cs",
+              "RelativeToolTip": "Entity\\Model\\Parameter\\Instructor.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T16:30:56.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InstructorDto.cs",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Parameter\\InstructorDto.cs",
+              "RelativeDocumentMoniker": "Entity\\Dto\\Parameter\\InstructorDto.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Parameter\\InstructorDto.cs",
+              "RelativeToolTip": "Entity\\Dto\\Parameter\\InstructorDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T16:30:51.327Z",
               "EditorCaption": ""
             }
           ]

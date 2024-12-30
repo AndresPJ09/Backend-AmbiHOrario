@@ -11,7 +11,7 @@ namespace Entity.Model.Parameter
         public int Id { get; set; }
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
-        public byte? Foto { get; set; }
+        public byte[]? Foto { get; set; }
         public string Identificacion { get; set; }
         public string Vinculo { get; set; }
         public string Especialidad { get; set; }

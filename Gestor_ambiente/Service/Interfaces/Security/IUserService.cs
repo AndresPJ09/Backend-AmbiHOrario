@@ -15,12 +15,13 @@ namespace Service.Interfaces.Security
         Task<IEnumerable<UserDto>> GetAll();
         Task<User> Save(UserDto entity);
         Task Update(UserDto entity);
-        Task Patch(UserDto entity);
+        //Task Patch(UserDto entity);
         Task Delete(int id);
         User mapearDatos(User user, UserDto entity);
         Task<PasswordDto> GetByEmail(string email);
         Task<IEnumerable<UserDto>> GetAllByRole(int id);
         Task<IEnumerable<MenuDto>> Login(AuthenticationDto dto);
         Task<IEnumerable<DataSelectDto>> GetAllSelect();
+        Task ChangePassword(ChangePasswordDto entity);
     }
 }

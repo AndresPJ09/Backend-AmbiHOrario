@@ -317,15 +317,6 @@ namespace Service.Implements.Security
             return user;
         }
 
-        public User cambioContraseña(User user, UserDto entity)
-        {
-            user.Id = entity.Id;
-            user.Password = BCrypt.Net.BCrypt.HashPassword(entity.Password);
-            user.PersonId = entity.PersonId;
-            user.State = entity.State;
-            return user;
-        }
-
         public async Task<IEnumerable<MenuDto>> Login(AuthenticationDto dto)
         {
             var login = await data.Login(dto.username);
@@ -357,7 +348,7 @@ namespace Service.Implements.Security
             return menuDtos;
         }
 
-        public async Task Patch(UserDto entity)
+        /*public async Task Patch(UserDto entity)
         {
             User user = await data.GetById(entity.Id);
             if (user == null)
@@ -382,7 +373,31 @@ namespace Service.Implements.Security
             }
 
             await data.Update(user);
+        }*/
+
+        public async Task ChangePassword(ChangePasswordDto entity)
+        {
+            // Verifica si el usuario existe
+            User user = await data.GetById(entity.UserId);
+            if (user == null)
+            {
+                throw new Exception("El usuario no existe.");
+            }
+
+            // Valida la contraseña actual
+            if (!BCrypt.Net.BCrypt.Verify(entity.CurrentPassword, user.Password))
+            {
+                throw new Exception("La contraseña actual es incorrecta.");
+            }
+
+            // Actualiza la contraseña con la nueva
+            user.Password = BCrypt.Net.BCrypt.HashPassword(entity.NewPassword);
+            user.UpdatedAt = DateTime.Now;
+
+            // Guarda los cambios
+            await data.Update(user);
         }
+
 
     }
 }

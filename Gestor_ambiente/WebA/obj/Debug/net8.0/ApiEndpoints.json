@@ -1079,22 +1079,6 @@
   },
   {
     "ContainingType": "WebA.Controllers.Implements.Security.UserController",
-    "Method": "Patch",
-    "RelativePath": "api/User",
-    "HttpMethod": "PATCH",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user",
-        "Type": "Entity.Dto.Security.UserDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebA.Controllers.Implements.Security.UserController",
     "Method": "Get",
     "RelativePath": "api/User/{id}",
     "HttpMethod": "GET",
@@ -1180,6 +1164,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Security.UserController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/User/ChangePassword",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "Entity.Dto.Security.ChangePasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "WebA.Controllers.Implements.Security.UserRoleController",

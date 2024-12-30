@@ -106,7 +106,7 @@ namespace WebA.Controllers.Implements.Security
             return Ok(result);
         }
 
-        [HttpPatch]
+        /*[HttpPatch]
         public async Task<ActionResult> Patch([FromBody] UserDto user)
         {
             if (user == null)
@@ -128,7 +128,26 @@ namespace WebA.Controllers.Implements.Security
             await business.Patch(existingUser);
 
             return NoContent();
-        }
+        }*/
 
+        [HttpPatch("ChangePassword")]
+        public async Task<ActionResult> ChangePassword([FromBody] ChangePasswordDto entity)
+        {
+            if (entity == null || string.IsNullOrEmpty(entity.CurrentPassword) || string.IsNullOrEmpty(entity.NewPassword))
+            {
+                return BadRequest("Los datos de la solicitud no son válidos.");
+            }
+
+            try
+            {
+                // Llama al servicio para cambiar la contraseña
+                await business.ChangePassword(entity);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

@@ -8,7 +8,8 @@ namespace Entity.Dto.Security
 {
     public class ChangePasswordDto
     {
-       public string CurrentPassword { get; set; }
+        public int UserId { get; set; }
+        public string CurrentPassword { get; set; }
        public string NewPassword { get; set; }
  
 

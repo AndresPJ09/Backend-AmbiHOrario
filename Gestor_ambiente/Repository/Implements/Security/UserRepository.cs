@@ -209,11 +209,5 @@ namespace Repository.Implements.Security
 
             return await context.QueryAsync<LoginDto>(sql, new { Username = username });
         }
-
-        public async Task Patch(User entity)
-        {
-            context.Entry(entity).State = EntityState.Modified;
-            await context.SaveChangesAsync();
-        }
     }
 }
