@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using Entity.Model;
+using Entity.Model.Operational;
 using Entity.Model.Parameter;
 using Entity.Model.Security;
 using Microsoft.EntityFrameworkCore;
@@ -102,6 +103,14 @@ namespace Entity.Context
         public DbSet<Ambiente> Ambientes => Set<Ambiente>();
 
         //Operational
+        public DbSet<Proyecto> Proyectos => Set<Proyecto>();
+        public DbSet<Actividad> Actividades => Set<Actividad>();
+        public DbSet<Ficha> Fichas => Set<Ficha>();
+        public DbSet<Horario> Horarios => Set<Horario>();
+        public DbSet<InstructorHorario> InstructorHorarios => Set<InstructorHorario>();
+        //public DbSet<ConsolidadoAmbiente> ConsolidadoAmbientes => Set<ConsolidadoAmbiente>();
+        //public DbSet<ConsolidadoHorario> ConsolidadoHorarios => Set<ConsolidadoHorario>();
+
 
         public readonly struct DapperEFCoreCommand : IDisposable
         {

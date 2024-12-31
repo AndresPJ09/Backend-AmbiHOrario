@@ -11,6 +11,10 @@ using Repository.Interfaces.Parameter;
 using Repository.Implements.Parameter;
 using Service.Interfaces.Parameter;
 using Service.Implements.Parameter;
+using Repository.Interfaces.Operational;
+using Repository.Implements.Operational;
+using Service.Implements.Operational;
+using Service.Interfaces.Operational;
 
 namespace WebA
 {
@@ -50,6 +54,11 @@ namespace WebA
             builder.Services.AddScoped<ICompetenciaRepositoy, CompetenciaRespository>();
             builder.Services.AddScoped<IProgramaRepositoy, ProgramaRepository>();
             builder.Services.AddScoped<IAmbienteRepositoy, AmbienteRepository>();
+            builder.Services.AddScoped<IInstructoHorarioRepository, InstructorHorarioRepository>();
+            builder.Services.AddScoped<IProyectoRepository, ProyectoRepository>();
+            builder.Services.AddScoped<IFichaRepository, FichaRepository>();
+            builder.Services.AddScoped<IHorarioRepository, HorarioRepository>();
+            builder.Services.AddScoped<IActividadRepository, ActividadRepository>();
 
             //Configuracion de Service I,S
             builder.Services.AddScoped<IModuleService, ModuleService>();
@@ -65,6 +74,11 @@ namespace WebA
             builder.Services.AddScoped<ICompetenciaService, CompetenciaService>();
             builder.Services.AddScoped<IProgramaService, ProgramaService>();
             builder.Services.AddScoped<IAmbienteService, AmbienteService>();
+            builder.Services.AddScoped<IInstructorHorarioService, InstructorHorarioService>();
+            builder.Services.AddScoped<IProyectoService, ProyectoService>();
+            builder.Services.AddScoped<IFichaService, FichaService>();
+            builder.Services.AddScoped<IHorarioService, HorarioService>();
+            builder.Services.AddScoped<IActividadService, ActividadService>();
 
             // Add services to the container.
             builder.Services.AddControllers();

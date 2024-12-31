@@ -50,13 +50,13 @@ namespace Service.Implements.Parameter
 
         public async Task<Nivel> Save(NivelDto entity)
         {
-            Nivel instructor = new Nivel();
-            instructor = mapearDatos(instructor, entity);
-            instructor.CreatedAt = DateTime.Now;
-            instructor.State = true;
-            instructor.DeletedAt = null;
-            instructor.UpdatedAt = null;
-            return await data.Save(instructor);
+            Nivel nivel = new Nivel();
+            nivel = mapearDatos(nivel, entity);
+            nivel.CreatedAt = DateTime.Now;
+            nivel.State = true;
+            nivel.DeletedAt = null;
+            nivel.UpdatedAt = null;
+            return await data.Save(nivel);
         }
 
         public async Task Update(NivelDto entity)
