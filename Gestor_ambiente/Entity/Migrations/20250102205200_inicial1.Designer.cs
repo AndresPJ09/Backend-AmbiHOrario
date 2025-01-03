@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Entity.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20241230165444_Incial4")]
-    partial class Incial4
+    [Migration("20250102205200_inicial1")]
+    partial class inicial1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,336 @@ namespace Entity.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("Entity.Model.Operational.Actividad", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Actividad_proyecto")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CompetenciaId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("Estado_RAP")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("Fecha_fin_Ac")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Fecha_inicio_Ac")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Num_semanas")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Result_aprendizaje")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("State")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CompetenciaId");
+
+                    b.ToTable("Actividades");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.ConsolidadoAmbiente", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("FichaID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("InstructorId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Observaciones")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("State")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("est_ideal_evalu")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FichaID");
+
+                    b.HasIndex("InstructorId");
+
+                    b.ToTable("ConsolidadoAmbientes");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.ConsolidadoHorario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("FichaID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("InstructorId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Observaciones")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("State")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FichaID");
+
+                    b.HasIndex("InstructorId");
+
+                    b.ToTable("ConsolidadoHorarios");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.Ficha", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AmbienteId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Codigo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Estado_ideal_evalu_rap")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Fecha_fin")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Fecha_inicio")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Fin_lectiva")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("GestorId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Num_semanas")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProgramaId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProyectoId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("State")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("userId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AmbienteId");
+
+                    b.HasIndex("ProgramaId");
+
+                    b.HasIndex("ProyectoId");
+
+                    b.HasIndex("userId");
+
+                    b.ToTable("Fichas");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.Horario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("FichaId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Hora_egreso")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Hora_ingreso")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Horas")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Jornada_programa")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Observaciones")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("State")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Validación")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FichaId");
+
+                    b.ToTable("Horarios");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.InstructorHorario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("HorarioId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("InstructorId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Observaciones")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("State")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("InstructorHorarios");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.Proyecto", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ActividadId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Fase")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Jornada_tecnica")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("State")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ActividadId");
+
+                    b.ToTable("Proyectos");
+                });
 
             modelBuilder.Entity("Entity.Model.Parameter.Ambiente", b =>
                 {
@@ -503,6 +833,112 @@ namespace Entity.Migrations
                     b.HasIndex("ModuleId");
 
                     b.ToTable("Views");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.Actividad", b =>
+                {
+                    b.HasOne("Entity.Model.Parameter.Competencia", "competencia")
+                        .WithMany()
+                        .HasForeignKey("CompetenciaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("competencia");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.ConsolidadoAmbiente", b =>
+                {
+                    b.HasOne("Entity.Model.Operational.Ficha", "ficha")
+                        .WithMany()
+                        .HasForeignKey("FichaID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Entity.Model.Parameter.Instructor", "instructor")
+                        .WithMany()
+                        .HasForeignKey("InstructorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ficha");
+
+                    b.Navigation("instructor");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.ConsolidadoHorario", b =>
+                {
+                    b.HasOne("Entity.Model.Operational.Ficha", "ficha")
+                        .WithMany()
+                        .HasForeignKey("FichaID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Entity.Model.Parameter.Instructor", "instructor")
+                        .WithMany()
+                        .HasForeignKey("InstructorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ficha");
+
+                    b.Navigation("instructor");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.Ficha", b =>
+                {
+                    b.HasOne("Entity.Model.Parameter.Ambiente", "ambiente")
+                        .WithMany()
+                        .HasForeignKey("AmbienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Entity.Model.Parameter.Programa", "programa")
+                        .WithMany()
+                        .HasForeignKey("ProgramaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Entity.Model.Operational.Proyecto", "proyecto")
+                        .WithMany()
+                        .HasForeignKey("ProyectoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Entity.Model.Security.User", "user")
+                        .WithMany()
+                        .HasForeignKey("userId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ambiente");
+
+                    b.Navigation("programa");
+
+                    b.Navigation("proyecto");
+
+                    b.Navigation("user");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.Horario", b =>
+                {
+                    b.HasOne("Entity.Model.Operational.Ficha", "ficha")
+                        .WithMany()
+                        .HasForeignKey("FichaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ficha");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.Proyecto", b =>
+                {
+                    b.HasOne("Entity.Model.Operational.Actividad", "actividad")
+                        .WithMany()
+                        .HasForeignKey("ActividadId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("actividad");
                 });
 
             modelBuilder.Entity("Entity.Model.Parameter.Programa", b =>

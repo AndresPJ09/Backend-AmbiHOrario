@@ -77,8 +77,16 @@ namespace WebA.Controllers.Implements.Security
             {
                 return BadRequest("Entity is null");
             }
-            var result = await business.Save(user);
-            return CreatedAtAction(nameof(Get), new { id = result.Id }, result);
+            try
+            {
+                ValidateInput(user);
+                var result = await business.Save(user);
+                return CreatedAtAction(nameof(Get), new { id = result.Id }, result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpPut]
@@ -86,10 +94,19 @@ namespace WebA.Controllers.Implements.Security
         {
             if (user == null)
             {
-                return BadRequest();
+                return BadRequest("La entidad no puede ser nula.");
             }
-            await business.Update(user);
-            return NoContent();
+
+            try
+            {
+                ValidateInput(user);
+                await business.Update(user);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpDelete("{id}")]
@@ -147,6 +164,39 @@ namespace WebA.Controllers.Implements.Security
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
+            }
+        }
+
+        private void ValidateInput(UserDto user)
+        {
+            // Validación del Username
+            if (string.IsNullOrWhiteSpace(user.Username))
+            {
+                throw new Exception("El username es obligatorio.");
+            }
+
+            if (user.Username.Length > 15)
+            {
+                throw new Exception("El username no puede superar los 15 caracteres.");
+            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(user.Username, @"^[a-zA-Z0-9]+$"))
+            {
+                throw new Exception("El username solo puede contener letras y números.");
+            }
+
+            // Validación de Password
+            if (!string.IsNullOrWhiteSpace(user.Password))
+            {
+                if (user.Password.Length < 8 || user.Password.Length > 15)
+                {
+                    throw new Exception("La contraseña debe tener entre 8 y 15 caracteres.");
+                }
+
+                if (!System.Text.RegularExpressions.Regex.IsMatch(user.Password, @"^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$"))
+                {
+                    throw new Exception("La contraseña debe tener al menos una letra mayúscula, un número y un carácter especial.");
+                }
             }
         }
     }

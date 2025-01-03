@@ -133,7 +133,26 @@ namespace Service.Implements.Security
 
         public async Task<User> Save(UserDto entity)
         {
+            var users = await data.GetAll();
+
+            // Validar que el username sea único
+            if (users.Any(u => u.Username == entity.Username))
+            {
+                throw new Exception("El username ya existe.");
+            }
+
+
             User user = new User();
+
+            // Encripta la contraseña si se proporciona en el DTO
+            if (!string.IsNullOrEmpty(entity.Password))
+            {
+                user.Password = BCrypt.Net.BCrypt.HashPassword(entity.Password);
+            }
+            else
+            {
+                throw new Exception("La contraseña no puede estar vacía para un nuevo usuario.");
+            }
             user = mapearDatos(user, entity);
             user.CreatedAt = DateTime.Now;
             user.State = true;
@@ -214,11 +233,27 @@ namespace Service.Implements.Security
                 throw new Exception("Registro no encontrado");
             }
 
-            // Validación de la contraseña actual
-            if (!BCrypt.Net.BCrypt.Verify(entity.Password, user.Password))
+            var users = await data.GetAll();
+
+            // Validar que el username sea único (excluyendo al usuario actual)
+            if (users.Any(u => u.Username == entity.Username && u.Id != entity.Id))
             {
-                throw new Exception("La contraseña actual es incorrecta");
+                throw new Exception("El username ya existe.");
             }
+
+
+            // Validación de la contraseña solo si es enviada
+            if (!string.IsNullOrEmpty(entity.Password))
+            {
+                if (!BCrypt.Net.BCrypt.Verify(entity.Password, user.Password))
+                {
+                    throw new Exception("La contraseña actual es incorrecta");
+                }
+
+                // Actualizar la contraseña si se envía una nueva
+                user.Password = BCrypt.Net.BCrypt.HashPassword(entity.Password);
+            }
+
             user = mapearDatos(user, entity);
             user.UpdatedAt = DateTime.Now;
 
@@ -302,16 +337,10 @@ namespace Service.Implements.Security
                 // Si se pasa un nuevo username, lo asignamos
                 user.Username = entity.Username;
             }
-            // Validación del password
-            if (!string.IsNullOrEmpty(entity.Password))
-            {
-                user.Password = BCrypt.Net.BCrypt.HashPassword(entity.Password);
-            }
-            else
-            {
+  
                 // Mantener el password actual si no se envía uno nuevo
                 user.Password = user.Password;
-            }
+   
             user.PersonId = entity.PersonId;
             user.State = entity.State;
             return user;

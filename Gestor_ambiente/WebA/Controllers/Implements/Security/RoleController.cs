@@ -3,6 +3,7 @@ using Entity.Dto;
 using Microsoft.AspNetCore.Mvc;
 using Service.Interfaces.Security;
 using WebA.Controllers.Interfaces.Security;
+using System.Text.RegularExpressions;
 
 namespace WebA.Controllers.Implements.Security
 {
@@ -15,6 +16,13 @@ namespace WebA.Controllers.Implements.Security
         public RoleController(IRoleService business)
         {
             this.business = business;
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            await business.Delete(id);
+            return NoContent();
         }
 
         [HttpGet("{id}")]
@@ -35,6 +43,14 @@ namespace WebA.Controllers.Implements.Security
             return Ok(result);
         }
 
+        [HttpGet("AllSelect")]
+        public async Task<ActionResult<ApiResponse<IEnumerable<DataSelectDto>>>> GetAllSelect()
+        {
+            var result = business.GetAllSelect();
+            return Ok(result);
+        }
+
+
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] RoleDto role)
         {
@@ -42,8 +58,18 @@ namespace WebA.Controllers.Implements.Security
             {
                 return BadRequest("Entity is null.");
             }
-            var result = await business.Save(role);
-            return CreatedAtAction(nameof(Get), new { id = result.Id }, result);
+
+            try
+            {
+                ValidateRole(role);
+
+                var result = await business.Save(role);
+                return CreatedAtAction(nameof(Get), new { id = result.Id }, result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpPut]
@@ -53,22 +79,45 @@ namespace WebA.Controllers.Implements.Security
             {
                 return BadRequest();
             }
-            await business.Update(role);
-            return NoContent();
+
+            try
+            {
+                ValidateRole(role);
+
+                await business.Update(role);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
-        [HttpDelete("{id}")]
-        public async Task<ActionResult> Delete(int id)
+
+        private void ValidateRole(RoleDto role)
         {
-            await business.Delete(id);
-            return NoContent();
+            // Validar Name: máximo 15 caracteres y solo letras
+            if (string.IsNullOrWhiteSpace(role.Name) || role.Name.Length > 15)
+            {
+                throw new Exception("El nombre no puede estar vacío y no debe superar los 15 caracteres.");
+            }
+
+            if (!Regex.IsMatch(role.Name, @"^[a-zA-Z]+$"))
+            {
+                throw new Exception("El nombre solo puede contener letras.");
+            }
+
+            // Validar Description: máximo 100 caracteres y solo letras
+            if (string.IsNullOrWhiteSpace(role.Description) || role.Description.Length > 100)
+            {
+                throw new Exception("La descripción no puede estar vacía y no debe superar los 100 caracteres.");
+            }
+
+            if (!Regex.IsMatch(role.Description, @"^[a-zA-Z\s]+$"))
+            {
+                throw new Exception("La descripción solo puede contener letras y espacios.");
+            }
         }
 
-        [HttpGet("AllSelect")]
-        public async Task<ActionResult<ApiResponse<IEnumerable<DataSelectDto>>>> GetAllSelect()
-        {
-            var result = await business.GetAllSelect();
-            return Ok(result);
-        }
     }
 }

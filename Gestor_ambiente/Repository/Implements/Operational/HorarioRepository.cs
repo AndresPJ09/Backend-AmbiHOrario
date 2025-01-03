@@ -1,4 +1,5 @@
 ﻿using Entity.Context;
+using Entity.Dto;
 using Entity.Dto.Operational;
 using Entity.Model.Operational;
 using Microsoft.EntityFrameworkCore;
@@ -55,8 +56,20 @@ namespace Repository.Implements.Operational
 
         public async Task<IEnumerable<HorarioDto>> GetAll()
         {
-            var sql = @"SELECT * FROM HorarioS Where DeletedAt is null ORDER BY Id ASC";
+            var sql = @"SELECT * FROM Horarios Where DeletedAt is null ORDER BY Id ASC";
             return await context.QueryAsync<HorarioDto>(sql);
+        }
+
+        public async Task<IEnumerable<DataSelectDto>> GetAllSelect()
+        {
+            var sql = @"SELECT 
+                        Id,
+                        Observaciones AS TextoMostrar 
+                    FROM 
+                        ConsolidadoHorarios
+                    WHERE DeletedAt IS NULL AND State = 1
+                    ORDER BY Id ASC";
+            return await context.QueryAsync<DataSelectDto>(sql);
         }
     }
 }

@@ -1,20 +1,20 @@
 using Service.Implements.Additional;
-using Service.Implements.Security;
 using Service.Interfaces.Additional;
-using Service.Interfaces.Security;
-using Repository.Implements.Security;
-using Repository.Interfaces.Security;
-using Entity.Context;
-using Entity.Dto.Security;
-using Microsoft.EntityFrameworkCore;
-using Repository.Interfaces.Parameter;
-using Repository.Implements.Parameter;
-using Service.Interfaces.Parameter;
-using Service.Implements.Parameter;
-using Repository.Interfaces.Operational;
-using Repository.Implements.Operational;
-using Service.Implements.Operational;
 using Service.Interfaces.Operational;
+using Service.Interfaces.Parameter;
+using Service.Interfaces.Security;
+using Service.Implements.Operational;
+using Service.Implements.Parameter;
+using Service.Implements.Security;
+using Repository.Interfaces.Operational;
+using Repository.Interfaces.Parameter;
+using Repository.Interfaces.Security;
+using Repository.Implements.Operational;
+using Repository.Implements.Parameter;
+using Repository.Implements.Security;
+using Entity.Context;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace WebA
 {
@@ -59,6 +59,8 @@ namespace WebA
             builder.Services.AddScoped<IFichaRepository, FichaRepository>();
             builder.Services.AddScoped<IHorarioRepository, HorarioRepository>();
             builder.Services.AddScoped<IActividadRepository, ActividadRepository>();
+            builder.Services.AddScoped<IConsolidadoAmbienteRepository, ConsolidadoAmbienteRepository>();
+            builder.Services.AddScoped<IConsolidadoHorarioRepository, ConsolidadoHorarioRepository>();
 
             //Configuracion de Service I,S
             builder.Services.AddScoped<IModuleService, ModuleService>();
@@ -79,6 +81,8 @@ namespace WebA
             builder.Services.AddScoped<IFichaService, FichaService>();
             builder.Services.AddScoped<IHorarioService, HorarioService>();
             builder.Services.AddScoped<IActividadService, ActividadService>();
+            builder.Services.AddScoped<IConsolidadoAmbienteService, ConsolidadoAmbienteService>();
+            builder.Services.AddScoped<IConsolidadoHorarioService, ConsolidadoHorarioService>();
 
             // Add services to the container.
             builder.Services.AddControllers();

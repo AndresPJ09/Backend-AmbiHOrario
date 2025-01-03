@@ -322,6 +322,234 @@
     ]
   },
   {
+    "ContainingType": "WebA.Controllers.Implements.Operational.ConsolidadoAmbienteController",
+    "Method": "GetAll",
+    "RelativePath": "api/ConsolidadoAmbiente",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[Entity.Dto.Operational.ConsolidadoAmbienteDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Operational.ConsolidadoAmbienteController",
+    "Method": "Post",
+    "RelativePath": "api/ConsolidadoAmbiente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "consolidadoAmbiente",
+        "Type": "Entity.Dto.Operational.ConsolidadoAmbienteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Operational.ConsolidadoAmbienteController",
+    "Method": "Put",
+    "RelativePath": "api/ConsolidadoAmbiente",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "consolidadoAmbiente",
+        "Type": "Entity.Dto.Operational.ConsolidadoAmbienteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Operational.ConsolidadoAmbienteController",
+    "Method": "Get",
+    "RelativePath": "api/ConsolidadoAmbiente/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[Entity.Dto.Operational.ConsolidadoAmbienteDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Operational.ConsolidadoAmbienteController",
+    "Method": "Delete",
+    "RelativePath": "api/ConsolidadoAmbiente/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Operational.ConsolidadoAmbienteController",
+    "Method": "GetAllSelect",
+    "RelativePath": "api/ConsolidadoAmbiente/AllSelect",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[Entity.Dto.DataSelectDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Operational.ConsolidadoHorarioController",
+    "Method": "GetAll",
+    "RelativePath": "api/ConsolidadoHorario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[Entity.Dto.Operational.ConsolidadoHorarioDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Operational.ConsolidadoHorarioController",
+    "Method": "Post",
+    "RelativePath": "api/ConsolidadoHorario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "Entity.Dto.Operational.ConsolidadoHorarioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Operational.ConsolidadoHorarioController",
+    "Method": "Put",
+    "RelativePath": "api/ConsolidadoHorario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "Entity.Dto.Operational.ConsolidadoHorarioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Operational.ConsolidadoHorarioController",
+    "Method": "Get",
+    "RelativePath": "api/ConsolidadoHorario/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[Entity.Dto.Operational.ConsolidadoHorarioDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Operational.ConsolidadoHorarioController",
+    "Method": "Delete",
+    "RelativePath": "api/ConsolidadoHorario/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Operational.ConsolidadoHorarioController",
+    "Method": "GetAllSelect",
+    "RelativePath": "api/ConsolidadoHorario/AllSelect",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[Entity.Dto.DataSelectDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebA.Controllers.Implements.Operational.FichaController",
     "Method": "GetAll",
     "RelativePath": "api/Ficha",
@@ -1321,6 +1549,22 @@
   },
   {
     "ContainingType": "WebA.Controllers.Implements.Security.RoleController",
+    "Method": "Delete",
+    "RelativePath": "api/Role/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Security.RoleController",
     "Method": "Get",
     "RelativePath": "api/Role/{id}",
     "HttpMethod": "GET",
@@ -1344,22 +1588,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "WebA.Controllers.Implements.Security.RoleController",
-    "Method": "Delete",
-    "RelativePath": "api/Role/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "WebA.Controllers.Implements.Security.RoleController",

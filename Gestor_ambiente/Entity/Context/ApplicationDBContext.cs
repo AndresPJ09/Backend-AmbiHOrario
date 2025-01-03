@@ -108,8 +108,8 @@ namespace Entity.Context
         public DbSet<Ficha> Fichas => Set<Ficha>();
         public DbSet<Horario> Horarios => Set<Horario>();
         public DbSet<InstructorHorario> InstructorHorarios => Set<InstructorHorario>();
-        //public DbSet<ConsolidadoAmbiente> ConsolidadoAmbientes => Set<ConsolidadoAmbiente>();
-        //public DbSet<ConsolidadoHorario> ConsolidadoHorarios => Set<ConsolidadoHorario>();
+        public DbSet<ConsolidadoAmbiente> ConsolidadoAmbientes => Set<ConsolidadoAmbiente>();
+        public DbSet<ConsolidadoHorario> ConsolidadoHorarios => Set<ConsolidadoHorario>();
 
 
         public readonly struct DapperEFCoreCommand : IDisposable

@@ -11,7 +11,6 @@ namespace Entity.Dto.Operational
     public class ActividadDto
     {
         public int Id { get; set; }
-        public int ProyectoId { get; set; }
         public string Actividad_proyecto { get; set; }
         public int CompetenciaId { get; set; }
         public string Result_aprendizaje { get; set; }

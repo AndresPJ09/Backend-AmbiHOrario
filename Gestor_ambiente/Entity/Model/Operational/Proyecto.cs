@@ -10,6 +10,8 @@ namespace Entity.Model.Operational
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
+        public int ActividadId { get; set; }
+        public Actividad actividad { get; set; }
         public string Jornada_tecnica { get; set; }
         public string Fase { get; set; }
         public Boolean State { get; set; }

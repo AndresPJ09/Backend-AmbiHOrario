@@ -84,6 +84,12 @@ namespace Service.Implements.Security
 
         public async Task<Role> Save(RoleDto entity)
         {
+            var roles = await data.GetAll();
+            if (roles.Any(r => r.Name == entity.Name)) 
+            {
+                throw new Exception("El nombre de rol ya existe.");
+            }
+
             Role role = new Role();
             role = mapearDatos(role, entity);
             role.CreatedAt = DateTime.Now;
@@ -114,6 +120,12 @@ namespace Service.Implements.Security
             if (role == null)
             {
                 throw new Exception("Registro no encontrado");
+            }
+            var roles = await data.GetAll(); 
+
+            if (roles.Any(r=> r.Name == entity.Name && r.Id != entity.Id))
+            {
+                throw new Exception("El nombre de rol ya existe.");
             }
             role = mapearDatos(role, entity);
             role.UpdatedAt = DateTime.Now;

@@ -26,6 +26,7 @@ namespace Service.Implements.Operational
 
             proyectoDto.Id = instructorHorario.Id;
             proyectoDto.Nombre = instructorHorario.Nombre;
+            proyectoDto.ActividadId = instructorHorario.ActividadId;
             proyectoDto.Jornada_tecnica = instructorHorario.Jornada_tecnica;
             proyectoDto.Fase = instructorHorario.Fase;
             proyectoDto.State = instructorHorario.State;
@@ -39,6 +40,7 @@ namespace Service.Implements.Operational
             {
                 Id = proyecto.Id,
                 Nombre = proyecto.Nombre,
+                ActividadId = proyecto.ActividadId,
                 Jornada_tecnica = proyecto.Jornada_tecnica,
                 Fase = proyecto.Fase,
                 State = proyecto.State,
@@ -80,6 +82,7 @@ namespace Service.Implements.Operational
         {
             proyecto.Id = entity.Id;
             proyecto.Nombre = entity.Nombre;
+            proyecto.ActividadId = entity.ActividadId;
             proyecto.Jornada_tecnica = entity.Jornada_tecnica;
             proyecto.Fase = entity.Fase;
             proyecto.State = entity.State;

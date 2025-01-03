@@ -56,9 +56,6 @@ namespace Entity.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ProyectoId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Result_aprendizaje")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -73,9 +70,89 @@ namespace Entity.Migrations
 
                     b.HasIndex("CompetenciaId");
 
-                    b.HasIndex("ProyectoId");
-
                     b.ToTable("Actividades");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.ConsolidadoAmbiente", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("FichaID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("InstructorId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Observaciones")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("State")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("est_ideal_evalu")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FichaID");
+
+                    b.HasIndex("InstructorId");
+
+                    b.ToTable("ConsolidadoAmbientes");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.ConsolidadoHorario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("FichaID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("InstructorId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Observaciones")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("State")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FichaID");
+
+                    b.HasIndex("InstructorId");
+
+                    b.ToTable("ConsolidadoHorarios");
                 });
 
             modelBuilder.Entity("Entity.Model.Operational.Ficha", b =>
@@ -241,6 +318,9 @@ namespace Entity.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("ActividadId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -266,6 +346,8 @@ namespace Entity.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ActividadId");
 
                     b.ToTable("Proyectos");
                 });
@@ -422,8 +504,8 @@ namespace Entity.Migrations
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("Duracion")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("Duracion")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -758,15 +840,45 @@ namespace Entity.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Entity.Model.Operational.Proyecto", "proyecto")
+                    b.Navigation("competencia");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.ConsolidadoAmbiente", b =>
+                {
+                    b.HasOne("Entity.Model.Operational.Ficha", "ficha")
                         .WithMany()
-                        .HasForeignKey("ProyectoId")
+                        .HasForeignKey("FichaID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("competencia");
+                    b.HasOne("Entity.Model.Parameter.Instructor", "instructor")
+                        .WithMany()
+                        .HasForeignKey("InstructorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("proyecto");
+                    b.Navigation("ficha");
+
+                    b.Navigation("instructor");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.ConsolidadoHorario", b =>
+                {
+                    b.HasOne("Entity.Model.Operational.Ficha", "ficha")
+                        .WithMany()
+                        .HasForeignKey("FichaID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Entity.Model.Parameter.Instructor", "instructor")
+                        .WithMany()
+                        .HasForeignKey("InstructorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ficha");
+
+                    b.Navigation("instructor");
                 });
 
             modelBuilder.Entity("Entity.Model.Operational.Ficha", b =>
@@ -813,6 +925,17 @@ namespace Entity.Migrations
                         .IsRequired();
 
                     b.Navigation("ficha");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.Proyecto", b =>
+                {
+                    b.HasOne("Entity.Model.Operational.Actividad", "actividad")
+                        .WithMany()
+                        .HasForeignKey("ActividadId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("actividad");
                 });
 
             modelBuilder.Entity("Entity.Model.Parameter.Programa", b =>

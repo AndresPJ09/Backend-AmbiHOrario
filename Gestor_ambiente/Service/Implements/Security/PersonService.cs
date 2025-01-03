@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Repository.Interfaces.Security;
+using System.Reflection;
 
 namespace Service.Implements.Security
 {
@@ -73,6 +74,19 @@ namespace Service.Implements.Security
 
         public async Task<Person> Save(PersonDto entity)
         {
+            var persons = await data.GetAll(); // Obtener todos los módulos (esto es asíncrono)
+            // Validar que el identificación sea único
+            if (persons.Any(p => p.Identification == entity.Identification)) // Si la identificación ya existe, lanzamos una excepción
+            {
+                throw new Exception("La identificación de person ya existe.");
+            }
+
+            // Validar que el correo sea único
+            if (persons.Any(p => p.Email == entity.Email)) // Si la correo ya existe, lanzamos una excepción
+            {
+                throw new Exception("El correo de persona ya existe.");
+            }
+
             Person person = new Person();
             person = mapearDatos(person, entity);
             person.CreatedAt = DateTime.Now;
@@ -85,6 +99,18 @@ namespace Service.Implements.Security
 
         public async Task Update(PersonDto entity)
         {
+            var persons = await data.GetAll(); 
+
+            if (persons.Any(p => p.Identification == entity.Identification && p.Id != entity.Id))
+            {
+                throw new Exception("La identificación de persona  ya existe.");
+            }
+
+            if (persons.Any(p => p.Email == entity.Email && p.Id != entity.Id))
+            {
+                throw new Exception("El correo de persona  ya existe.");
+            }
+
             Person person = await data.GetById(entity.Id);
             if (person == null)
             {

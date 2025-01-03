@@ -25,7 +25,6 @@ namespace Service.Implements.Operational
             ActividadDto actividadDto = new ActividadDto();
 
             actividadDto.Id = actividad.Id;
-            actividadDto.ProyectoId = actividad.ProyectoId;
             actividadDto.Actividad_proyecto = actividad.Actividad_proyecto;
             actividadDto.CompetenciaId = actividad.CompetenciaId;
             actividadDto.Result_aprendizaje = actividad.Result_aprendizaje;
@@ -43,7 +42,6 @@ namespace Service.Implements.Operational
             var actividadDtos = actividades.Select(actividad => new ActividadDto
             {
                 Id = actividad.Id,
-                ProyectoId = actividad.ProyectoId,
                 Actividad_proyecto = actividad.Actividad_proyecto,
                 CompetenciaId = actividad.CompetenciaId,
                 Result_aprendizaje = actividad.Result_aprendizaje,
@@ -89,7 +87,6 @@ namespace Service.Implements.Operational
         public Actividad mapearDatos(Actividad actividad, ActividadDto entity)
         {
             actividad.Id = entity.Id;
-            actividad.ProyectoId = entity.ProyectoId;
             actividad.Actividad_proyecto = entity.Actividad_proyecto;
             actividad.CompetenciaId = entity.CompetenciaId;
             actividad.Result_aprendizaje = entity.Result_aprendizaje;

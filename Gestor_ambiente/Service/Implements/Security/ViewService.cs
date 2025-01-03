@@ -73,6 +73,15 @@ namespace Service.Implements.Security
 
         public async Task<View> Save(ViewDto entity)
         {
+            var views = await data.GetAll();
+            if (views.Any(v => v.Name == entity.Name))
+            {
+                throw new Exception("El nombre de vista ya existe.");
+            }
+            if (views.Any(v => v.Route == entity.Route))
+            {
+                throw new Exception("La ruta de vista ya existe.");
+            }
             View view = new View();
             view = mapearDatos(view, entity);
             view.CreatedAt = DateTime.Now;
@@ -90,6 +99,15 @@ namespace Service.Implements.Security
             if (view == null)
             {
                 throw new Exception("Registro no encontrado");
+            }
+            var views = await data.GetAll();
+            if (views.Any(v => v.Name == entity.Name && v.Id != entity.Id))
+            {
+                throw new Exception("El nombre de rol ya existe.");
+            }
+            if (views.Any(v => v.Route == entity.Route && v.Id != entity.Id))
+            {
+                throw new Exception("la ruta de rol ya existe.");
             }
             view = mapearDatos(view, entity);
             view.UpdatedAt = DateTime.Now;

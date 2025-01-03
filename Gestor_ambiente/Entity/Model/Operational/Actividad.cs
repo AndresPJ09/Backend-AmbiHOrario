@@ -10,8 +10,6 @@ namespace Entity.Model.Operational
     public class Actividad
     {
         public int Id { get; set; }
-        public int ProyectoId { get; set; }
-        public Proyecto proyecto { get; set; }
         public string Actividad_proyecto { get; set; }
         public int CompetenciaId { get; set; }
         public Competencia competencia { get; set; }
