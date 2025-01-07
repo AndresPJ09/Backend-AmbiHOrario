@@ -94,7 +94,7 @@ namespace WebA.Controllers.Implements.Security
         private void ValidateView(ViewDto view)
         {
             // Validar Name: máximo 15 caracteres y solo letras
-            if (string.IsNullOrWhiteSpace(view.Name) || view.Name.Length > 15)
+            if (string.IsNullOrWhiteSpace(view.Name) || view.Name.Length > 25)
             {
                 throw new Exception("El nombre no puede estar vacío y no debe superar los 15 caracteres.");
             }
