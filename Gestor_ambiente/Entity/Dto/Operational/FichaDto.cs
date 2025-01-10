@@ -11,7 +11,7 @@ namespace Entity.Dto.Operational
     {
         public int Id { get; set; }
         public string Codigo { get; set; }
-        public int GestorId { get; set; }
+        public int UserId { get; set; }
         public int ProgramaId { get; set; }
         public int AmbienteId { get; set; }
         public int ProyectoId { get; set; }

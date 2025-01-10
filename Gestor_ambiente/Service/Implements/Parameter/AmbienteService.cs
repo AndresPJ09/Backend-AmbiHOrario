@@ -91,5 +91,6 @@ namespace Service.Implements.Parameter
         {
             return await data.GetAllSelect();
         }
+
     }
 }

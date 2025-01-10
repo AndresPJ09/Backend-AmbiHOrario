@@ -672,7 +672,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "nivel",
+        "Name": "horario",
         "Type": "Entity.Dto.Operational.HorarioDto",
         "IsRequired": true
       }
@@ -688,7 +688,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "nivel",
+        "Name": "horario",
         "Type": "Entity.Dto.Operational.HorarioDto",
         "IsRequired": true
       }

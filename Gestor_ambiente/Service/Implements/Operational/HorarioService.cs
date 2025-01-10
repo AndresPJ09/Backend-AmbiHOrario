@@ -4,6 +4,7 @@ using Repository.Interfaces.Operational;
 using Service.Interfaces.Operational;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,6 +58,20 @@ namespace Service.Implements.Operational
 
         public async Task<Horario> Save(HorarioDto entity)
         {
+            // Obtener la ficha relacionada
+            var ficha = await data.GetFichaById(entity.FichaId);
+
+            // Validar la ficha
+            if (ficha == null)
+            {
+                throw new ValidationException("Ficha no encontrada.");
+            }
+            if (!ficha.State)
+            {
+                throw new ValidationException("El ambiente asociado a esta ficha está inactivo y no puede usarse.");
+            }
+
+
             Horario horario = new Horario();
             horario = mapearDatos(horario, entity);
             horario.CreatedAt = DateTime.Now;

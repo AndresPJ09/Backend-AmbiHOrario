@@ -66,10 +66,30 @@ namespace Repository.Implements.Operational
                         Id,
                         Observaciones AS TextoMostrar 
                     FROM 
-                        ConsolidadoHorarios
+                        Horarios
                     WHERE DeletedAt IS NULL AND State = 1
                     ORDER BY Id ASC";
             return await context.QueryAsync<DataSelectDto>(sql);
         }
+
+        public async Task<Ficha> GetFichaById(int fichaId)
+        {
+            var sql = @"SELECT 
+                       f.*, 
+                       a.State
+                   FROM 
+                       Fichas f
+                   INNER JOIN Ambientes a ON f.AmbienteId = a.Id
+                   WHERE f.Id = @FichaId AND f.DeletedAt IS NULL";
+
+            return await context.QueryFirstOrDefaultAsync<Ficha>(sql, new { FichaId = fichaId });
+        }
+
+        public async Task SaveInstructorHorario(InstructorHorario entity)
+        {
+            context.InstructorHorarios.Add(entity);
+            await context.SaveChangesAsync();
+        }
+
     }
 }

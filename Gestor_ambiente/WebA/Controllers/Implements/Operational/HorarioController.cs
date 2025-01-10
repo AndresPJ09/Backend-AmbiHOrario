@@ -3,6 +3,7 @@ using Entity.Dto;
 using Microsoft.AspNetCore.Mvc;
 using Service.Interfaces.Operational;
 using WebA.Controllers.Interfaces.Operational;
+using Entity.Model.Operational;
 
 namespace WebA.Controllers.Implements.Operational
 {
@@ -36,24 +37,24 @@ namespace WebA.Controllers.Implements.Operational
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] HorarioDto nivel)
+        public async Task<ActionResult> Post([FromBody] HorarioDto horario)
         {
-            if (nivel == null)
+            if (horario == null)
             {
                 return BadRequest("Entity is null.");
             }
-            var result = await business.Save(nivel);
+            var result = await business.Save(horario);
             return CreatedAtAction(nameof(Get), new { id = result.Id }, result);
         }
 
         [HttpPut]
-        public async Task<ActionResult> Put([FromBody] HorarioDto nivel)
+        public async Task<ActionResult> Put([FromBody] HorarioDto horario)
         {
-            if (nivel == null)
+            if (horario == null)
             {
                 return BadRequest();
             }
-            await business.Update(nivel);
+            await business.Update(horario);
             return NoContent();
         }
 

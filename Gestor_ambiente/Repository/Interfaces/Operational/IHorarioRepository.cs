@@ -15,5 +15,8 @@ namespace Repository.Interfaces.Operational
         Task<Horario> Save(Horario entity);
         Task Update(Horario entity);
         Task<IEnumerable<HorarioDto>> GetAll();
+        Task<Ficha> GetFichaById(int fichaId);
+        Task SaveInstructorHorario(InstructorHorario entity);
+
     }
 }

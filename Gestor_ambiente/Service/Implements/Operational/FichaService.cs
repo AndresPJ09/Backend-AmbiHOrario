@@ -26,7 +26,7 @@ namespace Service.Implements.Operational
 
             fichaDto.Id = ficha.Id;
             fichaDto.Codigo = ficha.Codigo;
-            fichaDto.GestorId = ficha.GestorId;
+            fichaDto.UserId = ficha.UserId;
             fichaDto.ProgramaId = ficha.ProgramaId;
             fichaDto.AmbienteId = ficha.AmbienteId;
             fichaDto.ProyectoId = ficha.ProyectoId;
@@ -46,7 +46,7 @@ namespace Service.Implements.Operational
             {
                 Id = ficha.Id,
                 Codigo = ficha.Codigo,
-                GestorId = ficha.GestorId,
+                UserId = ficha.UserId,
                 ProgramaId = ficha.ProgramaId,
                 AmbienteId = ficha.AmbienteId,
                 ProyectoId = ficha.ProyectoId,
@@ -94,7 +94,7 @@ namespace Service.Implements.Operational
         {
             ficha.Id = entity.Id;
             ficha.Codigo = entity.Codigo;
-            ficha.GestorId = entity.GestorId;
+            ficha.UserId = entity.UserId;
             ficha.ProgramaId = entity.ProgramaId;
             ficha.AmbienteId = entity.AmbienteId;
             ficha.ProyectoId = entity.ProyectoId;

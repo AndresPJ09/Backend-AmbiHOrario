@@ -3443,7 +3443,8 @@
             "format": "date-time"
           },
           "estado_RAP": {
-            "type": "boolean"
+            "type": "string",
+            "nullable": true
           },
           "num_semanas": {
             "type": "string",
@@ -3845,7 +3846,7 @@
             "type": "string",
             "nullable": true
           },
-          "gestorId": {
+          "userId": {
             "type": "integer",
             "format": "int32"
           },
