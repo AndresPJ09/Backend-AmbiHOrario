@@ -11,7 +11,7 @@ namespace Entity.Dto.Parameter
         public int Id { get; set; }
         public string Codigo { get; set; } = null!;
         public string Nombre { get; set; } = null!;
-        public int Cupo { get; set; }
+        public int Capacidad { get; set; }
         public bool State { get; set; }
     }
 }

@@ -17,7 +17,6 @@ namespace Entity.Dto.Parameter
         public string Especialidad { get; set; }
         public string Correo { get; set; }
         public DateTime Fecha_inicio { get; set; }
-        public string Periodo { get; set; }
         public DateTime Hora_ingreso { get; set; }
         public DateTime Hora_egreso { get; set; }
         public bool State { get; set; }

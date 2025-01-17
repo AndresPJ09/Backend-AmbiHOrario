@@ -27,10 +27,8 @@ namespace Service.Implements.Operational
             actividadDto.Id = actividad.Id;
             actividadDto.Actividad_proyecto = actividad.Actividad_proyecto;
             actividadDto.CompetenciaId = actividad.CompetenciaId;
-            actividadDto.Result_aprendizaje = actividad.Result_aprendizaje;
             actividadDto.Fecha_inicio_Ac = actividad.Fecha_inicio_Ac;
             actividadDto.Fecha_fin_Ac = actividad.Fecha_fin_Ac;
-            actividadDto.Estado_RAP = actividad.Estado_RAP;
             actividadDto.Num_semanas = actividad.Num_semanas;
             actividadDto.State = actividad.State;
             return actividadDto;
@@ -44,10 +42,8 @@ namespace Service.Implements.Operational
                 Id = actividad.Id,
                 Actividad_proyecto = actividad.Actividad_proyecto,
                 CompetenciaId = actividad.CompetenciaId,
-                Result_aprendizaje = actividad.Result_aprendizaje,
                 Fecha_inicio_Ac = actividad.Fecha_inicio_Ac,
                 Fecha_fin_Ac = actividad.Fecha_fin_Ac,
-                Estado_RAP = actividad.Estado_RAP,
                 Num_semanas = actividad.Num_semanas,
                 State = actividad.State,
             });
@@ -57,6 +53,14 @@ namespace Service.Implements.Operational
 
         public async Task<Actividad> Save(ActividadDto entity)
         {
+            if (entity.Fecha_inicio_Ac < DateTime.Now.Date || entity.Fecha_fin_Ac < DateTime.Now.Date)
+            {
+                throw new Exception("Las fechas no pueden ser anteriores a la fecha actual.");
+            }
+            if (entity.Fecha_inicio_Ac > entity.Fecha_fin_Ac)
+            {
+                throw new Exception("La fecha de inicio no puede ser posterior a la fecha de fin.");
+            }
             Actividad actividad = new Actividad();
             actividad = mapearDatos(actividad, entity);
             actividad.CreatedAt = DateTime.Now;
@@ -68,6 +72,14 @@ namespace Service.Implements.Operational
 
         public async Task Update(ActividadDto entity)
         {
+            if (entity.Fecha_inicio_Ac < DateTime.Now.Date || entity.Fecha_fin_Ac < DateTime.Now.Date)
+            {
+                throw new Exception("Las fechas no pueden ser anteriores a la fecha actual.");
+            }
+            if (entity.Fecha_inicio_Ac > entity.Fecha_fin_Ac)
+            {
+                throw new Exception("La fecha de inicio no puede ser posterior a la fecha de fin.");
+            }
             Actividad actividad = await data.GetById(entity.Id);
             if (actividad == null)
             {
@@ -89,10 +101,8 @@ namespace Service.Implements.Operational
             actividad.Id = entity.Id;
             actividad.Actividad_proyecto = entity.Actividad_proyecto;
             actividad.CompetenciaId = entity.CompetenciaId;
-            actividad.Result_aprendizaje = entity.Result_aprendizaje;
             actividad.Fecha_inicio_Ac = entity.Fecha_inicio_Ac;
             actividad.Fecha_fin_Ac = entity.Fecha_fin_Ac;
-            actividad.Estado_RAP = entity.Estado_RAP;
             actividad.Num_semanas = entity.Num_semanas;
             actividad.State = entity.State;
             return actividad;

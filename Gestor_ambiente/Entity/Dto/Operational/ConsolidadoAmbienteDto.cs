@@ -12,8 +12,8 @@ namespace Entity.Dto.Operational
     {
         public int Id { get; set; }
         public int FichaID { get; set; }
+        public int AmbienteID { get; set; }
         public int InstructorId { get; set; }
-        public string est_ideal_evalu { get; set; }
         public string Observaciones { get; set; }
         public Boolean State { get; set; }
     }

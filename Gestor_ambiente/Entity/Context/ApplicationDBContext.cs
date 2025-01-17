@@ -101,12 +101,14 @@ namespace Entity.Context
         public DbSet<Programa> Programas => Set<Programa>();
         public DbSet<Competencia> Competencias => Set<Competencia>();
         public DbSet<Ambiente> Ambientes => Set<Ambiente>();
+        public DbSet<Periodo> Periodos => Set<Periodo>();
 
         //Operational
         public DbSet<Proyecto> Proyectos => Set<Proyecto>();
         public DbSet<Actividad> Actividades => Set<Actividad>();
         public DbSet<Ficha> Fichas => Set<Ficha>();
         public DbSet<Horario> Horarios => Set<Horario>();
+        public DbSet<Rap> raps => Set<Rap>();
         public DbSet<InstructorHorario> InstructorHorarios => Set<InstructorHorario>();
         public DbSet<ConsolidadoAmbiente> ConsolidadoAmbientes => Set<ConsolidadoAmbiente>();
         public DbSet<ConsolidadoHorario> ConsolidadoHorarios => Set<ConsolidadoHorario>();

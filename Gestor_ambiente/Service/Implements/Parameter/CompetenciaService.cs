@@ -27,7 +27,7 @@ namespace Service.Implements.Parameter
 
             competenciaDto.Id = competencia.Id;
             competenciaDto.Codigo = competencia.Codigo;
-            competenciaDto.Nombre = competencia.Nombre;
+            competenciaDto.Descripcion = competencia.Descripcion;
             competenciaDto.State = competencia.State;
             return competenciaDto;
         }
@@ -39,7 +39,7 @@ namespace Service.Implements.Parameter
             {
                 Id = competencia.Id,
                 Codigo = competencia.Codigo,
-                Nombre = competencia.Nombre,
+                Descripcion = competencia.Descripcion,
                 State = competencia.State,
             });
 
@@ -79,16 +79,11 @@ namespace Service.Implements.Parameter
         {
             competencia.Id = entity.Id;
             competencia.Codigo = entity.Codigo;
-            competencia.Nombre = entity.Nombre;
+            competencia.Descripcion = entity.Descripcion;
             competencia.State = entity.State;
             return competencia;
 
 
-        }
-
-        public async Task<IEnumerable<DataSelectDto>> GetAllSelect()
-        {
-            return await data.GetAllSelect();
         }
     }
 }

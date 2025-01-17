@@ -11,7 +11,7 @@ namespace Entity.Model.Parameter
         public int Id { get; set; }
         public string Codigo { get; set; } = null!;
         public string Nombre { get; set; } = null!;
-        public int Cupo { get; set; }
+        public int Capacidad { get; set; }
         public Boolean State { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }

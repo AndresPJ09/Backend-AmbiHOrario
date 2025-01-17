@@ -17,6 +17,5 @@ namespace Service.Interfaces.Parameter
         Task Update(CompetenciaDto entity);
         Task Delete(int id);
         Competencia mapearDatos(Competencia competencia, CompetenciaDto entity);
-        Task<IEnumerable<DataSelectDto>> GetAllSelect();
     }
 }

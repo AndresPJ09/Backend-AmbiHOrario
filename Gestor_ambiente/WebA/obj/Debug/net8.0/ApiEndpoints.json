@@ -302,26 +302,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebA.Controllers.Implements.Parameter.CompetenciaController",
-    "Method": "GetAllSelect",
-    "RelativePath": "api/Competencia/AllSelect",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "Entity.Dto.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[Entity.Dto.DataSelectDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "WebA.Controllers.Implements.Operational.ConsolidadoAmbienteController",
     "Method": "GetAll",
     "RelativePath": "api/ConsolidadoAmbiente",
@@ -1174,6 +1154,100 @@
     ]
   },
   {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.PeriodoController",
+    "Method": "GetAll",
+    "RelativePath": "api/Periodo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[Entity.Dto.Parameter.PeriodoDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.PeriodoController",
+    "Method": "Post",
+    "RelativePath": "api/Periodo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "periodo",
+        "Type": "Entity.Dto.Parameter.PeriodoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.PeriodoController",
+    "Method": "Put",
+    "RelativePath": "api/Periodo",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "periodo",
+        "Type": "Entity.Dto.Parameter.PeriodoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.PeriodoController",
+    "Method": "Get",
+    "RelativePath": "api/Periodo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[Entity.Dto.Parameter.PeriodoDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Parameter.PeriodoController",
+    "Method": "Delete",
+    "RelativePath": "api/Periodo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebA.Controllers.Implements.Security.PersonController",
     "Method": "GetAll",
     "RelativePath": "api/Person",
@@ -1483,6 +1557,100 @@
     "ContainingType": "WebA.Controllers.Implements.Operational.ProyectoController",
     "Method": "Delete",
     "RelativePath": "api/Proyecto/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Operational.RapController",
+    "Method": "GetAll",
+    "RelativePath": "api/Rap",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[Entity.Dto.Operational.RapDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Operational.RapController",
+    "Method": "Post",
+    "RelativePath": "api/Rap",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rap",
+        "Type": "Entity.Dto.Operational.RapDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Operational.RapController",
+    "Method": "Put",
+    "RelativePath": "api/Rap",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rap",
+        "Type": "Entity.Dto.Operational.RapDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Operational.RapController",
+    "Method": "Get",
+    "RelativePath": "api/Rap/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entity.Dto.ApiResponse\u00601[[Entity.Dto.Operational.RapDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebA.Controllers.Implements.Operational.RapController",
+    "Method": "Delete",
+    "RelativePath": "api/Rap/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

@@ -484,35 +484,6 @@
         }
       }
     },
-    "/api/Competencia/AllSelect": {
-      "get": {
-        "tags": [
-          "Competencia"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/DataSelectDtoIEnumerableApiResponse"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/DataSelectDtoIEnumerableApiResponse"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/DataSelectDtoIEnumerableApiResponse"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/api/ConsolidadoAmbiente/{id}": {
       "get": {
         "tags": [
@@ -1858,6 +1829,156 @@
         }
       }
     },
+    "/api/Periodo/{id}": {
+      "get": {
+        "tags": [
+          "Periodo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PeriodoDtoApiResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PeriodoDtoApiResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PeriodoDtoApiResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Periodo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Periodo": {
+      "get": {
+        "tags": [
+          "Periodo"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PeriodoDtoIEnumerableApiResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PeriodoDtoIEnumerableApiResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PeriodoDtoIEnumerableApiResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Periodo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PeriodoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PeriodoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PeriodoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Periodo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PeriodoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PeriodoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PeriodoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Person/{id}": {
       "delete": {
         "tags": [
@@ -2355,6 +2476,156 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/ProyectoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Rap/{id}": {
+      "get": {
+        "tags": [
+          "Rap"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/RapDtoApiResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RapDtoApiResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RapDtoApiResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Rap"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Rap": {
+      "get": {
+        "tags": [
+          "Rap"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/RapDtoIEnumerableApiResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RapDtoIEnumerableApiResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RapDtoIEnumerableApiResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Rap"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RapDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RapDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RapDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Rap"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RapDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RapDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RapDto"
               }
             }
           }
@@ -3430,10 +3701,6 @@
             "type": "integer",
             "format": "int32"
           },
-          "result_aprendizaje": {
-            "type": "string",
-            "nullable": true
-          },
           "fecha_inicio_Ac": {
             "type": "string",
             "format": "date-time"
@@ -3441,10 +3708,6 @@
           "fecha_fin_Ac": {
             "type": "string",
             "format": "date-time"
-          },
-          "estado_RAP": {
-            "type": "string",
-            "nullable": true
           },
           "num_semanas": {
             "type": "string",
@@ -3513,7 +3776,7 @@
             "type": "string",
             "nullable": true
           },
-          "cupo": {
+          "capacidad": {
             "type": "integer",
             "format": "int32"
           },
@@ -3608,7 +3871,7 @@
             "type": "string",
             "nullable": true
           },
-          "nombre": {
+          "descripcion": {
             "type": "string",
             "nullable": true
           },
@@ -3671,13 +3934,13 @@
             "type": "integer",
             "format": "int32"
           },
-          "instructorId": {
+          "ambienteID": {
             "type": "integer",
             "format": "int32"
           },
-          "est_ideal_evalu": {
-            "type": "string",
-            "nullable": true
+          "instructorId": {
+            "type": "integer",
+            "format": "int32"
           },
           "observaciones": {
             "type": "string",
@@ -3846,15 +4109,7 @@
             "type": "string",
             "nullable": true
           },
-          "userId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "programaId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "ambienteId": {
             "type": "integer",
             "format": "int32"
           },
@@ -3874,11 +4129,11 @@
             "type": "string",
             "format": "date-time"
           },
-          "estado_ideal_evalu_rap": {
-            "type": "string",
-            "nullable": true
-          },
           "num_semanas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cupo": {
             "type": "integer",
             "format": "int32"
           },
@@ -3937,7 +4192,19 @@
             "type": "integer",
             "format": "int32"
           },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
           "fichaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ambienteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "periodoId": {
             "type": "integer",
             "format": "int32"
           },
@@ -3945,13 +4212,9 @@
             "type": "string",
             "nullable": true
           },
-          "validación": {
+          "fecha_inicio": {
             "type": "string",
-            "nullable": true
-          },
-          "horas": {
-            "type": "string",
-            "nullable": true
+            "format": "date-time"
           },
           "hora_ingreso": {
             "type": "string",
@@ -3960,6 +4223,14 @@
           "hora_egreso": {
             "type": "string",
             "format": "date-time"
+          },
+          "validación": {
+            "type": "string",
+            "nullable": true
+          },
+          "horas": {
+            "type": "string",
+            "nullable": true
           },
           "observaciones": {
             "type": "string",
@@ -4052,10 +4323,6 @@
           "fecha_inicio": {
             "type": "string",
             "format": "date-time"
-          },
-          "periodo": {
-            "type": "string",
-            "nullable": true
           },
           "hora_ingreso": {
             "type": "string",
@@ -4351,6 +4618,65 @@
         },
         "additionalProperties": false
       },
+      "PeriodoDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mes": {
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PeriodoDtoApiResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/PeriodoDto"
+          },
+          "status": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "content": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PeriodoDtoIEnumerableApiResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PeriodoDto"
+            },
+            "nullable": true
+          },
+          "status": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "content": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "PersonDto": {
         "type": "object",
         "properties": {
@@ -4540,6 +4866,73 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/ProyectoDto"
+            },
+            "nullable": true
+          },
+          "status": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "content": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RapDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descripción": {
+            "type": "string",
+            "nullable": true
+          },
+          "competenciaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "estado_ideal_evaluacion_rap": {
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RapDtoApiResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/RapDto"
+          },
+          "status": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "content": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RapDtoIEnumerableApiResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RapDto"
             },
             "nullable": true
           },

@@ -6,7 +6,6 @@ namespace WebA.Controllers.Interfaces.Parameter
 {
     public interface ICompetenciaController
     {
-        Task<ActionResult<ApiResponse<IEnumerable<DataSelectDto>>>> GetAllSelect();
         Task<ActionResult<ApiResponse<IEnumerable<CompetenciaDto>>>> GetAll();
         Task<ActionResult<ApiResponse<CompetenciaDto>>> Get(int id);
         Task<ActionResult> Post([FromBody] CompetenciaDto competencia);

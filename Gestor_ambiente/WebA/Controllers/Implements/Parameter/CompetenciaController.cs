@@ -63,12 +63,5 @@ namespace WebA.Controllers.Implements.Parameter
             await business.Delete(id);
             return NoContent();
         }
-
-        [HttpGet("AllSelect")]
-        public async Task<ActionResult<ApiResponse<IEnumerable<DataSelectDto>>>> GetAllSelect()
-        {
-            var result = await business.GetAllSelect();
-            return Ok(result);
-        }
     }
 }

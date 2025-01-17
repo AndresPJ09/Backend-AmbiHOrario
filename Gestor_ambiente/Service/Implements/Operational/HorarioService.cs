@@ -26,12 +26,16 @@ namespace Service.Implements.Operational
             HorarioDto horarioDto = new HorarioDto();
 
             horarioDto.Id = horario.Id;
+            horarioDto.UserId = horario.UserId;
             horarioDto.FichaId = horario.FichaId;
+            horarioDto.AmbienteId = horario.AmbienteId;
+            horarioDto.PeriodoId = horario.PeriodoId;
             horarioDto.Jornada_programa = horario.Jornada_programa;
-            horarioDto.Validación = horario.Validación;
-            horarioDto.Horas = horario.Horas;
+            horarioDto.Fecha_inicio = horario.Fecha_inicio;
             horarioDto.Hora_ingreso = horario.Hora_ingreso;
             horarioDto.Hora_egreso = horario.Hora_egreso;
+            horarioDto.Horas = horario.Horas;
+            horarioDto.Validación = horario.Validación;
             horarioDto.Observaciones = horario.Observaciones;
             horarioDto.State = horario.State;
             return horarioDto;
@@ -43,12 +47,16 @@ namespace Service.Implements.Operational
             var horarioDtos = horarios.Select(horario => new HorarioDto
             {
                 Id = horario.Id,
+                UserId = horario.UserId,
                 FichaId = horario.FichaId,
+                AmbienteId = horario.AmbienteId,
+                PeriodoId = horario.PeriodoId,
                 Jornada_programa = horario.Jornada_programa,
-                Validación = horario.Validación,
-                Horas = horario.Horas,
+                Fecha_inicio = horario.Fecha_inicio,
                 Hora_ingreso = horario.Hora_ingreso,
                 Hora_egreso = horario.Hora_egreso,
+                Horas = horario.Horas,
+                Validación = horario.Validación,
                 Observaciones = horario.Observaciones,
                 State = horario.State,
             });
@@ -59,16 +67,14 @@ namespace Service.Implements.Operational
         public async Task<Horario> Save(HorarioDto entity)
         {
             // Obtener la ficha relacionada
-            var ficha = await data.GetFichaById(entity.FichaId);
-
-            // Validar la ficha
-            if (ficha == null)
+            var ambiente = await data.GetAmbientesById(entity.AmbienteId);
+            if (ambiente == null)
             {
                 throw new ValidationException("Ficha no encontrada.");
             }
-            if (!ficha.State)
+            if (!ambiente.State)
             {
-                throw new ValidationException("El ambiente asociado a esta ficha está inactivo y no puede usarse.");
+                throw new ValidationException("El ambiente no existe o está inactivo.");
             }
 
 
@@ -102,7 +108,10 @@ namespace Service.Implements.Operational
         public Horario mapearDatos(Horario horario, HorarioDto entity)
         {
             horario.Id = entity.Id;
+            horario.UserId = entity.UserId;
             horario.FichaId = entity.FichaId;
+            horario.AmbienteId = entity.AmbienteId;
+            horario.PeriodoId = entity.PeriodoId;
             horario.Jornada_programa = entity.Jornada_programa;
             horario.Validación = entity.Validación;
             horario.Horas = entity.Horas;

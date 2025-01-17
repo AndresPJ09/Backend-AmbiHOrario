@@ -1,5 +1,6 @@
 ﻿using Entity.Dto.Operational;
 using Entity.Model.Operational;
+using Entity.Model.Parameter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,8 +16,6 @@ namespace Repository.Interfaces.Operational
         Task<Horario> Save(Horario entity);
         Task Update(Horario entity);
         Task<IEnumerable<HorarioDto>> GetAll();
-        Task<Ficha> GetFichaById(int fichaId);
-        Task SaveInstructorHorario(InstructorHorario entity);
-
+        Task<Ambiente> GetAmbientesById(int ambienteId);
     }
 }

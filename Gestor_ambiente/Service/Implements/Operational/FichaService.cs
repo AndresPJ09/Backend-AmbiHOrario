@@ -26,14 +26,11 @@ namespace Service.Implements.Operational
 
             fichaDto.Id = ficha.Id;
             fichaDto.Codigo = ficha.Codigo;
-            fichaDto.UserId = ficha.UserId;
             fichaDto.ProgramaId = ficha.ProgramaId;
-            fichaDto.AmbienteId = ficha.AmbienteId;
             fichaDto.ProyectoId = ficha.ProyectoId;
             fichaDto.Fecha_inicio = ficha.Fecha_inicio;
             fichaDto.Fecha_fin = ficha.Fecha_fin;
             fichaDto.Fin_lectiva = ficha.Fin_lectiva;
-            fichaDto.Estado_ideal_evalu_rap = ficha.Estado_ideal_evalu_rap;
             fichaDto.Num_semanas = ficha.Num_semanas;
             fichaDto.State = ficha.State;
             return fichaDto;
@@ -46,14 +43,11 @@ namespace Service.Implements.Operational
             {
                 Id = ficha.Id,
                 Codigo = ficha.Codigo,
-                UserId = ficha.UserId,
                 ProgramaId = ficha.ProgramaId,
-                AmbienteId = ficha.AmbienteId,
                 ProyectoId = ficha.ProyectoId,
                 Fecha_inicio = ficha.Fecha_inicio,
                 Fecha_fin = ficha.Fecha_fin,
                 Fin_lectiva = ficha.Fin_lectiva,
-                Estado_ideal_evalu_rap = ficha.Estado_ideal_evalu_rap,
                 Num_semanas = ficha.Num_semanas,
                 State = ficha.State,
             });
@@ -94,14 +88,11 @@ namespace Service.Implements.Operational
         {
             ficha.Id = entity.Id;
             ficha.Codigo = entity.Codigo;
-            ficha.UserId = entity.UserId;
             ficha.ProgramaId = entity.ProgramaId;
-            ficha.AmbienteId = entity.AmbienteId;
             ficha.ProyectoId = entity.ProyectoId;
             ficha.Fecha_inicio = entity.Fecha_inicio;
             ficha.Fecha_fin = entity.Fecha_fin;
             ficha.Fin_lectiva = entity.Fin_lectiva;
-            ficha.Estado_ideal_evalu_rap = entity.Estado_ideal_evalu_rap;
             ficha.Num_semanas = entity.Num_semanas;
             ficha.State = entity.State;
             return ficha;

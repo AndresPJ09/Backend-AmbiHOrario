@@ -33,7 +33,6 @@ namespace Service.Implements.Operational
                 Id = ConsolidadoAmbiente.Id,
                 FichaID = ConsolidadoAmbiente.FichaID,
                 InstructorId = ConsolidadoAmbiente.InstructorId,
-                est_ideal_evalu = ConsolidadoAmbiente.est_ideal_evalu,
                 Observaciones = ConsolidadoAmbiente.Observaciones,
                 State = ConsolidadoAmbiente.State
             });
@@ -49,7 +48,6 @@ namespace Service.Implements.Operational
             consolidadoAmbienteDto.Id = consolidadoAmbiente.Id;
             consolidadoAmbienteDto.FichaID = consolidadoAmbiente.FichaID;
             consolidadoAmbienteDto.InstructorId = consolidadoAmbiente.InstructorId;
-            consolidadoAmbienteDto.est_ideal_evalu = consolidadoAmbiente.est_ideal_evalu;
             consolidadoAmbienteDto.Observaciones = consolidadoAmbiente.Observaciones;
             consolidadoAmbienteDto.State = consolidadoAmbiente.State;
             return consolidadoAmbienteDto;
@@ -84,7 +82,6 @@ namespace Service.Implements.Operational
             consolidadoAmbiente.Id = entity.Id;
             consolidadoAmbiente.FichaID = entity.FichaID;
             consolidadoAmbiente.InstructorId = entity.InstructorId;
-            consolidadoAmbiente.est_ideal_evalu = entity.est_ideal_evalu;
             consolidadoAmbiente.Observaciones = entity.Observaciones;
             consolidadoAmbiente.State = entity.State;
             return consolidadoAmbiente;

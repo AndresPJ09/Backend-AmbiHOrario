@@ -28,7 +28,7 @@ namespace Service.Implements.Parameter
             ambienteDto.Id = ambiente.Id;
             ambienteDto.Nombre = ambiente.Nombre;
             ambienteDto.Codigo = ambiente.Codigo;
-            ambienteDto.Cupo = ambiente.Cupo;
+            ambienteDto.Capacidad = ambiente.Capacidad;
             ambienteDto.State = ambiente.State;
             return ambienteDto;
         }
@@ -41,7 +41,7 @@ namespace Service.Implements.Parameter
                 Id = ambiente.Id,
                 Nombre = ambiente.Nombre,
                 Codigo = ambiente.Codigo,
-                Cupo = ambiente.Cupo,
+                Capacidad = ambiente.Capacidad,
                 State = ambiente.State,
             });
 
@@ -82,7 +82,7 @@ namespace Service.Implements.Parameter
             ambiente.Id = entity.Id;
             ambiente.Nombre = entity.Nombre;
             ambiente.Codigo = entity.Codigo;
-            ambiente.Cupo = entity.Cupo;
+            ambiente.Capacidad = entity.Capacidad;
             ambiente.State = entity.State;
             return ambiente;
         }

@@ -2,6 +2,7 @@
 using Entity.Dto;
 using Entity.Dto.Operational;
 using Entity.Model.Operational;
+using Entity.Model.Parameter;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Repository.Interfaces.Operational;
@@ -72,24 +73,12 @@ namespace Repository.Implements.Operational
             return await context.QueryAsync<DataSelectDto>(sql);
         }
 
-        public async Task<Ficha> GetFichaById(int fichaId)
+        public async Task<Ambiente> GetAmbientesById(int ambienteId)
         {
-            var sql = @"SELECT 
-                       f.*, 
-                       a.State
-                   FROM 
-                       Fichas f
-                   INNER JOIN Ambientes a ON f.AmbienteId = a.Id
-                   WHERE f.Id = @FichaId AND f.DeletedAt IS NULL";
-
-            return await context.QueryFirstOrDefaultAsync<Ficha>(sql, new { FichaId = fichaId });
+            var sql = @"SELECT * 
+                FROM Ambientes 
+                WHERE Id = @AmbienteId AND State = 1 AND DeletedAt IS NULL";
+            return await context.QueryFirstOrDefaultAsync<Ambiente>(sql, new { AmbienteId = ambienteId });
         }
-
-        public async Task SaveInstructorHorario(InstructorHorario entity)
-        {
-            context.InstructorHorarios.Add(entity);
-            await context.SaveChangesAsync();
-        }
-
     }
 }

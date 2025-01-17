@@ -43,10 +43,6 @@ namespace Entity.Migrations
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Estado_RAP")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime>("Fecha_fin_Ac")
                         .HasColumnType("datetime2");
 
@@ -54,10 +50,6 @@ namespace Entity.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Num_semanas")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Result_aprendizaje")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -164,9 +156,6 @@ namespace Entity.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AmbienteId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Codigo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -174,12 +163,11 @@ namespace Entity.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("Cupo")
+                        .HasColumnType("int");
+
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("Estado_ideal_evalu_rap")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("Fecha_fin")
                         .HasColumnType("datetime2");
@@ -205,18 +193,11 @@ namespace Entity.Migrations
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("AmbienteId");
 
                     b.HasIndex("ProgramaId");
 
                     b.HasIndex("ProyectoId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Fichas");
                 });
@@ -229,10 +210,16 @@ namespace Entity.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("AmbienteId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Fecha_inicio")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("FichaId")
@@ -256,11 +243,17 @@ namespace Entity.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("PeriodoId")
+                        .HasColumnType("int");
+
                     b.Property<bool>("State")
                         .HasColumnType("bit");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Validación")
                         .IsRequired()
@@ -268,7 +261,13 @@ namespace Entity.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AmbienteId");
+
                     b.HasIndex("FichaId");
+
+                    b.HasIndex("PeriodoId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Horarios");
                 });
@@ -350,6 +349,44 @@ namespace Entity.Migrations
                     b.ToTable("Proyectos");
                 });
 
+            modelBuilder.Entity("Entity.Model.Operational.Rap", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CompetenciaId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("State")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("estado_ideal_evaluacion_rap")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CompetenciaId");
+
+                    b.ToTable("raps");
+                });
+
             modelBuilder.Entity("Entity.Model.Parameter.Ambiente", b =>
                 {
                     b.Property<int>("Id")
@@ -358,15 +395,15 @@ namespace Entity.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("Capacidad")
+                        .HasColumnType("int");
+
                     b.Property<string>("Codigo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("Cupo")
-                        .HasColumnType("int");
 
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
@@ -404,7 +441,7 @@ namespace Entity.Migrations
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Nombre")
+                    b.Property<string>("Descripcion")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -465,10 +502,6 @@ namespace Entity.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Periodo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("State")
                         .HasColumnType("bit");
 
@@ -518,6 +551,35 @@ namespace Entity.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Niveles");
+                });
+
+            modelBuilder.Entity("Entity.Model.Parameter.Periodo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("State")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("mes")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Periodos");
                 });
 
             modelBuilder.Entity("Entity.Model.Parameter.Programa", b =>
@@ -881,12 +943,6 @@ namespace Entity.Migrations
 
             modelBuilder.Entity("Entity.Model.Operational.Ficha", b =>
                 {
-                    b.HasOne("Entity.Model.Parameter.Ambiente", "ambiente")
-                        .WithMany()
-                        .HasForeignKey("AmbienteId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Entity.Model.Parameter.Programa", "programa")
                         .WithMany()
                         .HasForeignKey("ProgramaId")
@@ -899,6 +955,31 @@ namespace Entity.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("programa");
+
+                    b.Navigation("proyecto");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.Horario", b =>
+                {
+                    b.HasOne("Entity.Model.Parameter.Ambiente", "ambiente")
+                        .WithMany()
+                        .HasForeignKey("AmbienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Entity.Model.Operational.Ficha", "ficha")
+                        .WithMany()
+                        .HasForeignKey("FichaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Entity.Model.Parameter.Periodo", "periodo")
+                        .WithMany()
+                        .HasForeignKey("PeriodoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Entity.Model.Security.User", "user")
                         .WithMany()
                         .HasForeignKey("UserId")
@@ -907,22 +988,11 @@ namespace Entity.Migrations
 
                     b.Navigation("ambiente");
 
-                    b.Navigation("programa");
+                    b.Navigation("ficha");
 
-                    b.Navigation("proyecto");
+                    b.Navigation("periodo");
 
                     b.Navigation("user");
-                });
-
-            modelBuilder.Entity("Entity.Model.Operational.Horario", b =>
-                {
-                    b.HasOne("Entity.Model.Operational.Ficha", "ficha")
-                        .WithMany()
-                        .HasForeignKey("FichaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ficha");
                 });
 
             modelBuilder.Entity("Entity.Model.Operational.Proyecto", b =>
@@ -934,6 +1004,17 @@ namespace Entity.Migrations
                         .IsRequired();
 
                     b.Navigation("actividad");
+                });
+
+            modelBuilder.Entity("Entity.Model.Operational.Rap", b =>
+                {
+                    b.HasOne("Entity.Model.Parameter.Competencia", "competencia")
+                        .WithMany()
+                        .HasForeignKey("CompetenciaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("competencia");
                 });
 
             modelBuilder.Entity("Entity.Model.Parameter.Programa", b =>
