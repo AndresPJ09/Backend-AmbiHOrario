@@ -99,7 +99,7 @@ namespace WebA.Controllers.Implements.Security
 
             try
             {
-                ValidateInput(user);
+                ValidateUpdate(user);
                 await business.Update(user);
                 return NoContent();
             }
@@ -198,6 +198,26 @@ namespace WebA.Controllers.Implements.Security
                     throw new Exception("La contraseña debe tener al menos una letra mayúscula, un número y un carácter especial.");
                 }
             }
+        }
+
+        private void ValidateUpdate(UserDto user)
+        {
+            // Validación del Username
+            if (string.IsNullOrWhiteSpace(user.Username))
+            {
+                throw new Exception("El username es obligatorio.");
+            }
+
+            if (user.Username.Length > 15)
+            {
+                throw new Exception("El username no puede superar los 15 caracteres.");
+            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(user.Username, @"^[a-zA-Z0-9]+$"))
+            {
+                throw new Exception("El username solo puede contener letras y números.");
+            }
+
         }
     }
 }

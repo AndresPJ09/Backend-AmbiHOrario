@@ -1,8 +1,11 @@
 ﻿using Entity.Dto;
 using Entity.Dto.Parameter;
+using Entity.Model.Security;
 using Microsoft.AspNetCore.Mvc;
 using Service.Interfaces.Parameter;
+using System;
 using WebA.Controllers.Interfaces.Parameter;
+using static Dapper.SqlMapper;
 namespace WebA.Controllers.Implements.Parameter
 {
     [Route("api/Instructor")]
@@ -41,8 +44,17 @@ namespace WebA.Controllers.Implements.Parameter
             {
                 return BadRequest("Entity is null.");
             }
-            var result = await business.Save(instructor);
-            return CreatedAtAction(nameof(Get), new { id = result.Id }, result);
+            try
+            {
+                ValidateHorario(instructor.Hora_ingreso, instructor.Hora_egreso);
+
+                var result = await business.Save(instructor);
+                return CreatedAtAction(nameof(Get), new { id = instructor.Id }, result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpPut]
@@ -52,8 +64,18 @@ namespace WebA.Controllers.Implements.Parameter
             {
                 return BadRequest();
             }
-            await business.Update(instructor);
-            return NoContent();
+            try
+            {
+                // Validar la persona
+                ValidateHorario(instructor.Hora_ingreso, instructor.Hora_egreso);
+
+                await business.Update(instructor);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpDelete("{id}")]
@@ -68,6 +90,28 @@ namespace WebA.Controllers.Implements.Parameter
         {
             var result = await business.GetAllSelect();
             return Ok(result);
+        }
+
+        private void ValidateHorario(DateTime horaIngreso, DateTime horaEgreso)
+        {
+            // Definir las horas permitidas
+            TimeSpan horaMinima = TimeSpan.FromHours(6); // 6:00 AM
+            TimeSpan horaMaxima = TimeSpan.FromHours(18); // 6:00 PM
+
+            if (horaIngreso.TimeOfDay < horaMinima || horaIngreso.TimeOfDay > horaMaxima)
+            {
+                throw new Exception("La hora de ingreso debe estar entre las 6:00 AM y las 6:00 PM.");
+            }
+
+            if (horaEgreso.TimeOfDay < horaMinima || horaEgreso.TimeOfDay > horaMaxima)
+            {
+                throw new Exception("La hora de egreso debe estar entre las 6:00 AM y las 6:00 PM.");
+            }
+
+            if (horaIngreso >= horaEgreso)
+            {
+                throw new Exception("La hora de ingreso no puede ser mayor o igual a la hora de egreso.");
+            }
         }
     }
 }

@@ -140,8 +140,6 @@ namespace Service.Implements.Security
             {
                 throw new Exception("El username ya existe.");
             }
-
-
             User user = new User();
 
             // Encripta la contraseña si se proporciona en el DTO
@@ -153,6 +151,13 @@ namespace Service.Implements.Security
             {
                 throw new Exception("La contraseña no puede estar vacía para un nuevo usuario.");
             }
+
+            var existingUser = users.FirstOrDefault(u => u.PersonId == entity.PersonId && u.Id != entity.Id);
+            if (existingUser != null)
+            {
+                throw new Exception("Esta persona ya está asociada a otro usuario.");
+            }
+
             user = mapearDatos(user, entity);
             user.CreatedAt = DateTime.Now;
             user.State = true;
@@ -241,19 +246,6 @@ namespace Service.Implements.Security
                 throw new Exception("El username ya existe.");
             }
 
-
-            // Validación de la contraseña solo si es enviada
-            if (!string.IsNullOrEmpty(entity.Password))
-            {
-                if (!BCrypt.Net.BCrypt.Verify(entity.Password, user.Password))
-                {
-                    throw new Exception("La contraseña actual es incorrecta");
-                }
-
-                // Actualizar la contraseña si se envía una nueva
-                user.Password = BCrypt.Net.BCrypt.HashPassword(entity.Password);
-            }
-
             user = mapearDatos(user, entity);
             user.UpdatedAt = DateTime.Now;
 
@@ -337,10 +329,15 @@ namespace Service.Implements.Security
                 // Si se pasa un nuevo username, lo asignamos
                 user.Username = entity.Username;
             }
-  
-                // Mantener el password actual si no se envía uno nuevo
-                user.Password = user.Password;
-   
+
+            // Mantener el password actual si no se envía uno nuevo
+            if (!string.IsNullOrEmpty(entity.Password))
+            {
+                user.Password = BCrypt.Net.BCrypt.HashPassword(entity.Password);
+            }
+            // Si la contraseña no se envía, no se cambia
+
+
             user.PersonId = entity.PersonId;
             user.State = entity.State;
             return user;

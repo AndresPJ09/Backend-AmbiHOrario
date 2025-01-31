@@ -32,6 +32,7 @@ namespace Service.Implements.Operational
             fichaDto.Fecha_fin = ficha.Fecha_fin;
             fichaDto.Fin_lectiva = ficha.Fin_lectiva;
             fichaDto.Num_semanas = ficha.Num_semanas;
+            fichaDto.Cupo = ficha.Cupo;
             fichaDto.State = ficha.State;
             return fichaDto;
         }
@@ -49,6 +50,7 @@ namespace Service.Implements.Operational
                 Fecha_fin = ficha.Fecha_fin,
                 Fin_lectiva = ficha.Fin_lectiva,
                 Num_semanas = ficha.Num_semanas,
+                Cupo = ficha.Cupo,
                 State = ficha.State,
             });
 
@@ -94,6 +96,7 @@ namespace Service.Implements.Operational
             ficha.Fecha_fin = entity.Fecha_fin;
             ficha.Fin_lectiva = entity.Fin_lectiva;
             ficha.Num_semanas = entity.Num_semanas;
+            ficha.Cupo = entity.Cupo;
             ficha.State = entity.State;
             return ficha;
 

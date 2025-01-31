@@ -66,17 +66,41 @@ namespace Service.Implements.Operational
 
         public async Task<Horario> Save(HorarioDto entity)
         {
-            // Obtener la ficha relacionada
+            // Obtener la ambiente relacionada
             var ambiente = await data.GetAmbientesById(entity.AmbienteId);
             if (ambiente == null)
             {
-                throw new ValidationException("Ficha no encontrada.");
+                throw new ValidationException("Ambiente no encontrada.");
             }
-            if (!ambiente.State)
+            if (ambiente.State == null || ambiente.State == false)
             {
-                throw new ValidationException("El ambiente no existe o está inactivo.");
+                throw new ValidationException("El ambiente está inactivo y no se puede asignar.");
             }
 
+            // Validar Usuario
+            var usuario = await data.GetUsuarioById(entity.UserId);
+            if (usuario == null)
+            {
+                throw new ValidationException($"Usuario con ID {entity.UserId} no encontrado.");
+            }
+            if (!usuario.State)
+            {
+                throw new ValidationException("El usuario está inactivo y no se puede asignar.");
+            }
+
+            // Validar Ficha
+            var ficha = await data.GetFichaById(entity.FichaId);
+            if (ficha == null)
+            {
+                throw new ValidationException($"Ficha con ID {entity.FichaId} no encontrada.");
+            }
+
+            // Validar Periodo
+            var periodo = await data.GetPeriodoById(entity.PeriodoId);
+            if (periodo == null)
+            {
+                throw new ValidationException($"Periodo con ID {entity.PeriodoId} no encontrado.");
+            }
 
             Horario horario = new Horario();
             horario = mapearDatos(horario, entity);

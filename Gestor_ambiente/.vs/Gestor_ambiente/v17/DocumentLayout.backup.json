@@ -3,88 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\service\\implements\\operational\\actividadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|solutionrelative:service\\implements\\operational\\actividadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E334FEDC-DD37-47E1-8D06-94C77C902CAC}|Repository\\Repository.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\repository\\implements\\operational\\horariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E334FEDC-DD37-47E1-8D06-94C77C902CAC}|Repository\\Repository.csproj|solutionrelative:repository\\implements\\operational\\horariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\service\\implements\\operational\\horarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|solutionrelative:service\\implements\\operational\\horarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E334FEDC-DD37-47E1-8D06-94C77C902CAC}|Repository\\Repository.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\repository\\interfaces\\operational\\ihorariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E334FEDC-DD37-47E1-8D06-94C77C902CAC}|Repository\\Repository.csproj|solutionrelative:repository\\interfaces\\operational\\ihorariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\dto\\operational\\horariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\dto\\operational\\horariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{092F48B0-F961-4EC2-864F-0C4F54B3B840}|WebA\\WebA.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\weba\\controllers\\implements\\operational\\horariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{092F48B0-F961-4EC2-864F-0C4F54B3B840}|WebA\\WebA.csproj|solutionrelative:weba\\controllers\\implements\\operational\\horariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\model\\operational\\horario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\model\\operational\\horario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\service\\implements\\operational\\consolidadoambienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|solutionrelative:service\\implements\\operational\\consolidadoambienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\service\\interfaces\\operational\\ihorarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|solutionrelative:service\\interfaces\\operational\\ihorarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\dto\\operational\\consolidadohorariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\dto\\operational\\consolidadohorariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\model\\operational\\consolidadoambiente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\model\\operational\\consolidadoambiente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\dto\\operational\\consolidadoambientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\dto\\operational\\consolidadoambientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\model\\operational\\ficha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\model\\operational\\ficha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Migrations\\20250117164405_inicial6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Entity\\Migrations\\20250117164405_inicial6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{092F48B0-F961-4EC2-864F-0C4F54B3B840}|WebA\\WebA.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\weba\\controllers\\interfaces\\parameter\\icompetenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{092F48B0-F961-4EC2-864F-0C4F54B3B840}|WebA\\WebA.csproj|solutionrelative:weba\\controllers\\interfaces\\parameter\\icompetenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{092F48B0-F961-4EC2-864F-0C4F54B3B840}|WebA\\WebA.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\weba\\controllers\\implements\\parameter\\competenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{092F48B0-F961-4EC2-864F-0C4F54B3B840}|WebA\\WebA.csproj|solutionrelative:weba\\controllers\\implements\\parameter\\competenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\dto\\operational\\actividaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\dto\\operational\\actividaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\service\\implements\\parameter\\competenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|solutionrelative:service\\implements\\parameter\\competenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\service\\interfaces\\parameter\\icompetenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99F5EFD3-4CD1-43C8-AFCF-29989728A9DF}|Service\\Service.csproj|solutionrelative:service\\interfaces\\parameter\\icompetenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\model\\operational\\actividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\model\\operational\\actividad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\dto\\operational\\fichadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\dto\\operational\\fichadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\model\\operational\\rap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\model\\operational\\rap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\model\\operational\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\model\\operational\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\dto\\operational\\rapdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\dto\\operational\\rapdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\entity\\dto\\operational\\proyectodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63B48166-A230-48F3-94ED-0C2F070C8752}|Entity\\Entity.csproj|solutionrelative:entity\\dto\\operational\\proyectodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{092F48B0-F961-4EC2-864F-0C4F54B3B840}|WebA\\WebA.csproj|c:\\users\\sena\\desktop\\back ambihorario\\gestor_ambiente\\weba\\controllers\\interfaces\\operational\\ihorariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{092F48B0-F961-4EC2-864F-0C4F54B3B840}|WebA\\WebA.csproj|solutionrelative:weba\\controllers\\interfaces\\operational\\ihorariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,19 +42,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ActividadService.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Service\\Implements\\Operational\\ActividadService.cs",
-              "RelativeDocumentMoniker": "Service\\Implements\\Operational\\ActividadService.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Service\\Implements\\Operational\\ActividadService.cs",
-              "RelativeToolTip": "Service\\Implements\\Operational\\ActividadService.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAYwFEAAAANAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "IHorarioController.cs",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\WebA\\Controllers\\Interfaces\\Operational\\IHorarioController.cs",
+              "RelativeDocumentMoniker": "WebA\\Controllers\\Interfaces\\Operational\\IHorarioController.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\WebA\\Controllers\\Interfaces\\Operational\\IHorarioController.cs",
+              "RelativeToolTip": "WebA\\Controllers\\Interfaces\\Operational\\IHorarioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T19:24:01.693Z",
+              "WhenOpened": "2025-01-31T15:42:54.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HorarioController.cs",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\WebA\\Controllers\\Implements\\Operational\\HorarioController.cs",
+              "RelativeDocumentMoniker": "WebA\\Controllers\\Implements\\Operational\\HorarioController.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\WebA\\Controllers\\Implements\\Operational\\HorarioController.cs",
+              "RelativeToolTip": "WebA\\Controllers\\Implements\\Operational\\HorarioController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowDcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T15:42:52.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IHorarioService.cs",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Service\\Interfaces\\Operational\\IHorarioService.cs",
+              "RelativeDocumentMoniker": "Service\\Interfaces\\Operational\\IHorarioService.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Service\\Interfaces\\Operational\\IHorarioService.cs",
+              "RelativeToolTip": "Service\\Interfaces\\Operational\\IHorarioService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T15:42:36.998Z",
               "EditorCaption": ""
             },
             {
@@ -117,256 +91,61 @@
               "RelativeDocumentMoniker": "Service\\Implements\\Operational\\HorarioService.cs",
               "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Service\\Implements\\Operational\\HorarioService.cs",
               "RelativeToolTip": "Service\\Implements\\Operational\\HorarioService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowHAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAswEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T18:58:29.067Z",
+              "WhenOpened": "2025-01-31T15:42:29.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ConsolidadoAmbienteService.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Service\\Implements\\Operational\\ConsolidadoAmbienteService.cs",
-              "RelativeDocumentMoniker": "Service\\Implements\\Operational\\ConsolidadoAmbienteService.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Service\\Implements\\Operational\\ConsolidadoAmbienteService.cs",
-              "RelativeToolTip": "Service\\Implements\\Operational\\ConsolidadoAmbienteService.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAuwFMAAABDAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "HorarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Repository\\Implements\\Operational\\HorarioRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Implements\\Operational\\HorarioRepository.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Repository\\Implements\\Operational\\HorarioRepository.cs",
+              "RelativeToolTip": "Repository\\Implements\\Operational\\HorarioRepository.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAswE4AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T18:56:56.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ConsolidadoHorarioDto.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Operational\\ConsolidadoHorarioDto.cs",
-              "RelativeDocumentMoniker": "Entity\\Dto\\Operational\\ConsolidadoHorarioDto.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Operational\\ConsolidadoHorarioDto.cs",
-              "RelativeToolTip": "Entity\\Dto\\Operational\\ConsolidadoHorarioDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T18:52:51.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ConsolidadoAmbienteDto.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Operational\\ConsolidadoAmbienteDto.cs",
-              "RelativeDocumentMoniker": "Entity\\Dto\\Operational\\ConsolidadoAmbienteDto.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Operational\\ConsolidadoAmbienteDto.cs",
-              "RelativeToolTip": "Entity\\Dto\\Operational\\ConsolidadoAmbienteDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T18:51:53.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ConsolidadoAmbiente.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Operational\\ConsolidadoAmbiente.cs",
-              "RelativeDocumentMoniker": "Entity\\Model\\Operational\\ConsolidadoAmbiente.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Operational\\ConsolidadoAmbiente.cs",
-              "RelativeToolTip": "Entity\\Model\\Operational\\ConsolidadoAmbiente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T18:51:42.299Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Horario.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Operational\\Horario.cs",
-              "RelativeDocumentMoniker": "Entity\\Model\\Operational\\Horario.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Operational\\Horario.cs",
-              "RelativeToolTip": "Entity\\Model\\Operational\\Horario.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:47:41.713Z",
+              "WhenOpened": "2025-01-31T20:45:31.59Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "IHorarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Repository\\Interfaces\\Operational\\IHorarioRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Interfaces\\Operational\\IHorarioRepository.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Repository\\Interfaces\\Operational\\IHorarioRepository.cs",
+              "RelativeToolTip": "Repository\\Interfaces\\Operational\\IHorarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T15:42:21.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Horario.cs",
+              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Operational\\Horario.cs",
+              "RelativeDocumentMoniker": "Entity\\Model\\Operational\\Horario.cs",
+              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Operational\\Horario.cs",
+              "RelativeToolTip": "Entity\\Model\\Operational\\Horario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T15:42:03.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "HorarioDto.cs",
               "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Operational\\HorarioDto.cs",
               "RelativeDocumentMoniker": "Entity\\Dto\\Operational\\HorarioDto.cs",
               "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Operational\\HorarioDto.cs",
               "RelativeToolTip": "Entity\\Dto\\Operational\\HorarioDto.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:47:27.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "20250117164405_inicial6.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Migrations\\20250117164405_inicial6.cs",
-              "RelativeDocumentMoniker": "Entity\\Migrations\\20250117164405_inicial6.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Migrations\\20250117164405_inicial6.cs",
-              "RelativeToolTip": "Entity\\Migrations\\20250117164405_inicial6.cs",
-              "ViewState": "AgIAAIsAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:44:05.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ICompetenciaController.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\WebA\\Controllers\\Interfaces\\Parameter\\ICompetenciaController.cs",
-              "RelativeDocumentMoniker": "WebA\\Controllers\\Interfaces\\Parameter\\ICompetenciaController.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\WebA\\Controllers\\Interfaces\\Parameter\\ICompetenciaController.cs",
-              "RelativeToolTip": "WebA\\Controllers\\Interfaces\\Parameter\\ICompetenciaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:42:29.111Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CompetenciaController.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\WebA\\Controllers\\Implements\\Parameter\\CompetenciaController.cs",
-              "RelativeDocumentMoniker": "WebA\\Controllers\\Implements\\Parameter\\CompetenciaController.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\WebA\\Controllers\\Implements\\Parameter\\CompetenciaController.cs",
-              "RelativeToolTip": "WebA\\Controllers\\Implements\\Parameter\\CompetenciaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:42:05.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ICompetenciaService.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Service\\Interfaces\\Parameter\\ICompetenciaService.cs",
-              "RelativeDocumentMoniker": "Service\\Interfaces\\Parameter\\ICompetenciaService.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Service\\Interfaces\\Parameter\\ICompetenciaService.cs",
-              "RelativeToolTip": "Service\\Interfaces\\Parameter\\ICompetenciaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:41:17.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CompetenciaService.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Service\\Implements\\Parameter\\CompetenciaService.cs",
-              "RelativeDocumentMoniker": "Service\\Implements\\Parameter\\CompetenciaService.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Service\\Implements\\Parameter\\CompetenciaService.cs",
-              "RelativeToolTip": "Service\\Implements\\Parameter\\CompetenciaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:39:27.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Rap.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Operational\\Rap.cs",
-              "RelativeDocumentMoniker": "Entity\\Model\\Operational\\Rap.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Operational\\Rap.cs",
-              "RelativeToolTip": "Entity\\Model\\Operational\\Rap.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:08:13.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Proyecto.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Operational\\Proyecto.cs",
-              "RelativeDocumentMoniker": "Entity\\Model\\Operational\\Proyecto.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Operational\\Proyecto.cs",
-              "RelativeToolTip": "Entity\\Model\\Operational\\Proyecto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:08:10.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Ficha.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Operational\\Ficha.cs",
-              "RelativeDocumentMoniker": "Entity\\Model\\Operational\\Ficha.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Operational\\Ficha.cs",
-              "RelativeToolTip": "Entity\\Model\\Operational\\Ficha.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:08:06.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Actividad.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Operational\\Actividad.cs",
-              "RelativeDocumentMoniker": "Entity\\Model\\Operational\\Actividad.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Model\\Operational\\Actividad.cs",
-              "RelativeToolTip": "Entity\\Model\\Operational\\Actividad.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:08:04.59Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RapDto.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Operational\\RapDto.cs",
-              "RelativeDocumentMoniker": "Entity\\Dto\\Operational\\RapDto.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Operational\\RapDto.cs",
-              "RelativeToolTip": "Entity\\Dto\\Operational\\RapDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:08:00.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ProyectoDto.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Operational\\ProyectoDto.cs",
-              "RelativeDocumentMoniker": "Entity\\Dto\\Operational\\ProyectoDto.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Operational\\ProyectoDto.cs",
-              "RelativeToolTip": "Entity\\Dto\\Operational\\ProyectoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:07:59.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FichaDto.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Operational\\FichaDto.cs",
-              "RelativeDocumentMoniker": "Entity\\Dto\\Operational\\FichaDto.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Operational\\FichaDto.cs",
-              "RelativeToolTip": "Entity\\Dto\\Operational\\FichaDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:07:57.741Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ActividadDto.cs",
-              "DocumentMoniker": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Operational\\ActividadDto.cs",
-              "RelativeDocumentMoniker": "Entity\\Dto\\Operational\\ActividadDto.cs",
-              "ToolTip": "C:\\Users\\SENA\\Desktop\\Back AmbiHorario\\Gestor_ambiente\\Entity\\Dto\\Operational\\ActividadDto.cs",
-              "RelativeToolTip": "Entity\\Dto\\Operational\\ActividadDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:07:55.983Z",
+              "WhenOpened": "2025-01-31T15:41:58.865Z",
               "EditorCaption": ""
             }
           ]

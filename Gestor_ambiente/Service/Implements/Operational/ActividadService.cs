@@ -72,19 +72,24 @@ namespace Service.Implements.Operational
 
         public async Task Update(ActividadDto entity)
         {
-            if (entity.Fecha_inicio_Ac < DateTime.Now.Date || entity.Fecha_fin_Ac < DateTime.Now.Date)
-            {
-                throw new Exception("Las fechas no pueden ser anteriores a la fecha actual.");
-            }
-            if (entity.Fecha_inicio_Ac > entity.Fecha_fin_Ac)
-            {
-                throw new Exception("La fecha de inicio no puede ser posterior a la fecha de fin.");
-            }
             Actividad actividad = await data.GetById(entity.Id);
             if (actividad == null)
             {
                 throw new Exception("Registro no encontrado");
             }
+            // Validación de fechas solo si las fechas han sido modificadas
+            if (entity.Fecha_inicio_Ac != actividad.Fecha_inicio_Ac || entity.Fecha_fin_Ac != actividad.Fecha_fin_Ac)
+            {
+                if (entity.Fecha_inicio_Ac < DateTime.Now.Date || entity.Fecha_fin_Ac < DateTime.Now.Date)
+                {
+                    throw new Exception("Las fechas no pueden ser anteriores a la fecha actual.");
+                }
+                if (entity.Fecha_inicio_Ac > entity.Fecha_fin_Ac)
+                {
+                    throw new Exception("La fecha de inicio no puede ser posterior a la fecha de fin.");
+                }
+            }
+
             actividad = mapearDatos(actividad, entity);
             actividad.UpdatedAt = DateTime.Now;
 

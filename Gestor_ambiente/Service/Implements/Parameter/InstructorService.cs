@@ -80,6 +80,7 @@ namespace Service.Implements.Parameter
             if (instructor == null)
             {
                 throw new Exception("Registro no encontrado");
+
             }
             instructor = mapearDatos(instructor, entity);
             instructor.UpdatedAt = DateTime.Now;
@@ -110,10 +111,10 @@ namespace Service.Implements.Parameter
 
 
         }
-
         public async Task<IEnumerable<DataSelectDto>> GetAllSelect()
         {
             return await data.GetAllSelect();
         }
+
     }
 }

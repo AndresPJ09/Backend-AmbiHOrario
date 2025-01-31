@@ -61,6 +61,8 @@ namespace WebA
             builder.Services.AddScoped<IActividadRepository, ActividadRepository>();
             builder.Services.AddScoped<IConsolidadoAmbienteRepository, ConsolidadoAmbienteRepository>();
             builder.Services.AddScoped<IConsolidadoHorarioRepository, ConsolidadoHorarioRepository>();
+            builder.Services.AddScoped<IRapRepository, RapRepository>();
+            builder.Services.AddScoped<IPeriodoRepository, PeriodoRepository>();
 
             //Configuracion de Service I,S
             builder.Services.AddScoped<IModuleService, ModuleService>();
@@ -83,6 +85,8 @@ namespace WebA
             builder.Services.AddScoped<IActividadService, ActividadService>();
             builder.Services.AddScoped<IConsolidadoAmbienteService, ConsolidadoAmbienteService>();
             builder.Services.AddScoped<IConsolidadoHorarioService, ConsolidadoHorarioService>();
+            builder.Services.AddScoped<IPeriodoService, PeriodoService>();
+            builder.Services.AddScoped<IRapService, RapService>();
 
             // Add services to the container.
             builder.Services.AddControllers();
