@@ -21,6 +21,8 @@ namespace Repository.Interfaces.Operational
         Task<User> GetUsuarioById(int userId);
         Task<Ficha> GetFichaById(int fichaId);
         Task<Periodo> GetPeriodoById(int periodoId);
+        Task SaveInstructorHorario(int horarioId, int instructorId, string observaciones);
+
 
     }
 }

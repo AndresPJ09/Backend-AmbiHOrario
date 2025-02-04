@@ -4196,6 +4196,14 @@
             "type": "integer",
             "format": "int32"
           },
+          "instructoresId": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
           "fichaId": {
             "type": "integer",
             "format": "int32"
@@ -4389,18 +4397,21 @@
           },
           "instructorId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "horarioId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "observaciones": {
             "type": "string",
             "nullable": true
           },
           "state": {
-            "type": "boolean"
+            "type": "boolean",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -4625,9 +4636,21 @@
             "type": "integer",
             "format": "int32"
           },
-          "mes": {
+          "nombre": {
             "type": "string",
             "nullable": true
+          },
+          "fecha_inicio": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fecha_fin": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ano": {
+            "type": "integer",
+            "format": "int32"
           },
           "state": {
             "type": "boolean"

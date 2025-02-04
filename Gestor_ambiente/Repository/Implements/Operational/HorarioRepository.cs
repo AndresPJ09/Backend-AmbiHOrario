@@ -98,6 +98,19 @@ namespace Repository.Implements.Operational
             var sql = @"SELECT * FROM Periodos WHERE Id = @PeriodoId AND State = 1 AND DeletedAt IS NULL";
             return await context.QueryFirstOrDefaultAsync<Periodo>(sql, new { PeriodoId = periodoId });
         }
+        public async Task SaveInstructorHorario(int horarioId, int instructorId, string observaciones)
+        {
+            var instructorHorario = new InstructorHorario
+            {
+                HorarioId = horarioId,
+                InstructorId = instructorId,
+                Observaciones = observaciones,
+                State = true
+            };
+
+            await context.InstructorHorarios.AddAsync(instructorHorario);
+            await context.SaveChangesAsync();
+        }
 
 
     }

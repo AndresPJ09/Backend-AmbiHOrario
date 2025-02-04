@@ -74,6 +74,9 @@ namespace Entity.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("AmbienteId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -96,11 +99,9 @@ namespace Entity.Migrations
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("est_ideal_evalu")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
+
+                    b.HasIndex("AmbienteId");
 
                     b.HasIndex("FichaID");
 
@@ -573,7 +574,16 @@ namespace Entity.Migrations
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("mes")
+                    b.Property<int>("ano")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("fecha_fin")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("fecha_inicio")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("nombre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -905,6 +915,12 @@ namespace Entity.Migrations
 
             modelBuilder.Entity("Entity.Model.Operational.ConsolidadoAmbiente", b =>
                 {
+                    b.HasOne("Entity.Model.Parameter.Ambiente", "ambiente")
+                        .WithMany()
+                        .HasForeignKey("AmbienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Entity.Model.Operational.Ficha", "ficha")
                         .WithMany()
                         .HasForeignKey("FichaID")
@@ -916,6 +932,8 @@ namespace Entity.Migrations
                         .HasForeignKey("InstructorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("ambiente");
 
                     b.Navigation("ficha");
 

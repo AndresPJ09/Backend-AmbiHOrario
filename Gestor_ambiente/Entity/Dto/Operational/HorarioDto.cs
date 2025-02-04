@@ -12,6 +12,7 @@ namespace Entity.Dto.Operational
     {
         public int Id { get; set; }
         public int UserId { get; set; }
+        public List<int> InstructoresId { get; set; } = new List<int>();
         public int FichaId { get; set; }
         public int AmbienteId { get; set; }
         public int PeriodoId { get; set; }

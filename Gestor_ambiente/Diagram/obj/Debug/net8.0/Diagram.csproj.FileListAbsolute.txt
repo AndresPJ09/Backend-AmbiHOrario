@@ -1,0 +1,15 @@
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Diagram\bin\Debug\net8.0\Diagram.deps.json
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Diagram\bin\Debug\net8.0\Diagram.runtimeconfig.json
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Diagram\bin\Debug\net8.0\Diagram.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Diagram\bin\Debug\net8.0\Diagram.pdb
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Diagram\obj\Debug\net8.0\Diagram.csproj.AssemblyReference.cache
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Diagram\obj\Debug\net8.0\Diagram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Diagram\obj\Debug\net8.0\Diagram.AssemblyInfoInputs.cache
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Diagram\obj\Debug\net8.0\Diagram.AssemblyInfo.cs
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Diagram\obj\Debug\net8.0\Diagram.csproj.CoreCompileInputs.cache
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Diagram\obj\Debug\net8.0\Diagram.sourcelink.json
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Diagram\obj\Debug\net8.0\Diagram.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Diagram\obj\Debug\net8.0\refint\Diagram.dll
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Diagram\obj\Debug\net8.0\Diagram.pdb
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Diagram\obj\Debug\net8.0\Diagram.genruntimeconfig.cache
+C:\Users\SENA\Desktop\Back AmbiHorario\Gestor_ambiente\Diagram\obj\Debug\net8.0\ref\Diagram.dll

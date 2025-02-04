@@ -79,10 +79,10 @@ namespace Service.Implements.Operational
         public InstructorHorario mapearDatos(InstructorHorario instructorHorario, InstructorHorarioDto entity)
         {
             instructorHorario.Id = entity.Id;
-            instructorHorario.InstructorId = entity.InstructorId;
-            instructorHorario.HorarioId = entity.HorarioId;
-            instructorHorario.Observaciones = entity.Observaciones;
-            instructorHorario.State = entity.State;
+            instructorHorario.InstructorId = (int)entity.InstructorId;
+            instructorHorario.HorarioId = (int)entity.HorarioId;
+            instructorHorario.Observaciones = (string)entity.Observaciones;
+            instructorHorario.State = (Boolean)entity.State;
             return instructorHorario;
 
 

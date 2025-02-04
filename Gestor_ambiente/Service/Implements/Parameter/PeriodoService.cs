@@ -32,7 +32,10 @@ namespace Service.Implements.Parameter
             PeriodoDto periododto = new PeriodoDto();
 
             periododto.Id = periodo.Id;
-            periododto.mes = periodo.mes;
+            periododto.nombre = periodo.nombre;
+            periododto.fecha_inicio = periodo.fecha_inicio;
+            periododto.fecha_fin = periodo.fecha_fin;
+            periododto.ano = periodo.ano;
             periododto.State = periodo.State;
             return periododto;
         }
@@ -43,7 +46,10 @@ namespace Service.Implements.Parameter
             var periodoDtos = periodos.Select(periodo => new PeriodoDto
             {
                 Id = periodo.Id,
-                mes = periodo.mes,
+                nombre = periodo.nombre,
+                fecha_inicio = periodo.fecha_inicio,
+                fecha_fin = periodo.fecha_fin,
+                ano = periodo.ano,
                 State = periodo.State
             });
 
@@ -88,7 +94,10 @@ namespace Service.Implements.Parameter
         public Periodo mapearDatos(Periodo periodo, PeriodoDto entity)
         {
             periodo.Id = entity.Id;
-            periodo.mes = entity.mes;
+            periodo.nombre = entity.nombre;
+            periodo.fecha_inicio = entity.fecha_inicio;
+            periodo.fecha_fin = entity.fecha_fin;
+            periodo.ano = entity.ano;
             periodo.State = entity.State;
             return periodo;
 

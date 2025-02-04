@@ -11,9 +11,9 @@ namespace Entity.Dto.Operational
     public class InstructorHorarioDto
     {
         public int Id { get; set; }
-        public int InstructorId { get; set; }
-        public int HorarioId { get; set; }
-        public string Observaciones { get; set; }
-        public Boolean State { get; set; }
+        public int? InstructorId { get; set; }
+        public int? HorarioId { get; set; }
+        public string? Observaciones { get; set; }
+        public bool? State { get; set; }
     }
 }

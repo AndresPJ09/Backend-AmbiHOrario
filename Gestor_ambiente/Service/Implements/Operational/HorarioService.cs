@@ -14,10 +14,12 @@ namespace Service.Implements.Operational
     public class HorarioService : IHorarioService
     {
         private readonly IHorarioRepository data;
+        private readonly IInstructoHorarioRepository ihorari;
 
-        public HorarioService(IHorarioRepository data)
+        public HorarioService(IHorarioRepository data, IInstructoHorarioRepository ihorari)
         {
             this.data = data;
+            this.ihorari = ihorari;
         }
 
         public async Task<HorarioDto> GetById(int id)
@@ -108,7 +110,20 @@ namespace Service.Implements.Operational
             horario.State = true;
             horario.DeletedAt = null;
             horario.UpdatedAt = null;
-            return await data.Save(horario);
+
+            // Guardar el horario
+            var horarioGuardado = await data.Save(horario);
+
+            // Asignar instructores al horario si existen
+            if (entity.InstructoresId != null && entity.InstructoresId.Any())
+            {
+                foreach (var instructorId in entity.InstructoresId)
+                {
+                    await data.SaveInstructorHorario(horarioGuardado.Id, instructorId, entity.Observaciones);
+                }
+            }
+
+            return horarioGuardado;
         }
 
         public async Task Update(HorarioDto entity)
