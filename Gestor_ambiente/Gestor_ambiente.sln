@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebA", "WebA\WebA.csproj", "{092F48B0-F961-4EC2-864F-0C4F54B3B840}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagram", "..\..\..\Downloads\Diagram\Diagram\Diagram.csproj", "{078521F8-46BE-4D2D-9631-B15BE5520C01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{092F48B0-F961-4EC2-864F-0C4F54B3B840}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{092F48B0-F961-4EC2-864F-0C4F54B3B840}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{092F48B0-F961-4EC2-864F-0C4F54B3B840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{078521F8-46BE-4D2D-9631-B15BE5520C01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078521F8-46BE-4D2D-9631-B15BE5520C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078521F8-46BE-4D2D-9631-B15BE5520C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078521F8-46BE-4D2D-9631-B15BE5520C01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

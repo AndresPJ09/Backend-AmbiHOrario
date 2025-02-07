@@ -3,6 +3,7 @@ using Entity.Dto;
 using Microsoft.AspNetCore.Mvc;
 using Service.Interfaces.Operational;
 using WebA.Controllers.Interfaces.Operational;
+using Entity.Model.Parameter;
 
 namespace WebA.Controllers.Implements.Operational
 {
@@ -36,25 +37,39 @@ namespace WebA.Controllers.Implements.Operational
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] ActividadDto nivel)
+        public async Task<ActionResult> Post([FromBody] ActividadDto actividad)
         {
-            if (nivel == null)
+            if (actividad == null)
             {
                 return BadRequest("Entity is null.");
             }
-            var result = await business.Save(nivel);
-            return CreatedAtAction(nameof(Get), new { id = result.Id }, result);
+            try
+            {
+                var result = await business.Save(actividad);
+                return CreatedAtAction(nameof(Get), new { id = result.Id }, result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpPut]
-        public async Task<ActionResult> Put([FromBody] ActividadDto nivel)
+        public async Task<ActionResult> Put([FromBody] ActividadDto actividad)
         {
-            if (nivel == null)
+            if (actividad == null)
             {
                 return BadRequest();
             }
-            await business.Update(nivel);
-            return NoContent();
+            try
+            {
+                await business.Update(actividad);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpDelete("{id}")]

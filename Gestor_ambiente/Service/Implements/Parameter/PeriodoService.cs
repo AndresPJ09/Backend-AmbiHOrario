@@ -55,9 +55,23 @@ namespace Service.Implements.Parameter
 
             return periodoDtos;
         }
-
         public async Task<Periodo> Save(PeriodoDto entity)
         {
+            // Validaciones de fechas
+            if (entity.fecha_inicio.Year != entity.ano)
+            {
+                throw new Exception("El año de la fecha de inicio debe coincidir con el año indicado.");
+            }
+
+            if (entity.fecha_fin < entity.fecha_inicio)
+            {
+                throw new Exception("La fecha de fin no puede ser anterior a la fecha de inicio.");
+            }
+
+            if (entity.fecha_inicio.Year != entity.fecha_fin.Year)
+            {
+                throw new Exception("La fecha de inicio y la fecha de fin deben ser del mismo año.");
+            }
 
             Periodo periodo = new Periodo();
             periodo = mapearDatos(periodo, entity);
@@ -65,6 +79,7 @@ namespace Service.Implements.Parameter
             periodo.State = true;
             periodo.DeletedAt = null;
             periodo.UpdatedAt = null;
+
             return await data.Save(periodo);
         }
 
@@ -75,6 +90,23 @@ namespace Service.Implements.Parameter
             {
                 throw new Exception("Registro no encontrado");
             }
+
+            // Validaciones de fechas
+            if (entity.fecha_inicio.Year != entity.ano)
+            {
+                throw new Exception("El año de la fecha de inicio debe coincidir con el año indicado.");
+            }
+
+            if (entity.fecha_fin < entity.fecha_inicio)
+            {
+                throw new Exception("La fecha de fin no puede ser anterior a la fecha de inicio.");
+            }
+
+            if (entity.fecha_inicio.Year != entity.fecha_fin.Year)
+            {
+                throw new Exception("La fecha de inicio y la fecha de fin deben ser del mismo año.");
+            }
+
             periodo = mapearDatos(periodo, entity);
             periodo.UpdatedAt = DateTime.Now;
 

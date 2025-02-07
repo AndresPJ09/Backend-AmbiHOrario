@@ -20,7 +20,7 @@ namespace Entity.Dto.Operational
         public DateTime Fecha_inicio { get; set; }
         public DateTime Hora_ingreso { get; set; }
         public DateTime Hora_egreso { get; set; }
-        public string Validación { get; set; }
+        public string Validacion { get; set; }
         public string Horas { get; set; }
         public string Observaciones { get; set; }
         public Boolean State { get; set; }

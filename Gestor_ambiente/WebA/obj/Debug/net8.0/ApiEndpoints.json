@@ -28,7 +28,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "nivel",
+        "Name": "actividad",
         "Type": "Entity.Dto.Operational.ActividadDto",
         "IsRequired": true
       }
@@ -44,7 +44,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "nivel",
+        "Name": "actividad",
         "Type": "Entity.Dto.Operational.ActividadDto",
         "IsRequired": true
       }

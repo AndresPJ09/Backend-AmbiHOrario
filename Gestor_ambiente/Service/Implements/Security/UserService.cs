@@ -83,42 +83,97 @@ namespace Service.Implements.Security
                 Asunto = "Código de verificación para restablecer contraseña",
                 Contenido = $@"
 <!DOCTYPE html>
-<html lang='es'>
+<html lang=""es"">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Código de verificación</title>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Código de Verificación</title>
+    <style>
+        body {{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }}
+        .container {{
+            width: 100%;
+            padding: 20px;
+        }}
+        .card {{
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }}
+        .header {{
+            background-color: #5EB319;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 15px;
+        }}
+        .logo {{
+            text-align: center;
+            padding: 20px 0;
+        }}
+        .logo img {{
+            max-width: 150px;
+        }}
+        .content {{
+            padding: 20px;
+            color: #333;
+            font-size: 16px;
+        }}
+        .code {{
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            background-color: #5EB319;
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px dashed #ECF0F5;
+            border-radius: 5px;
+            color: #F7F7F7;
+        }}
+        .footer {{
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            padding: 15px;
+            background-color: #f8f9fa;
+        }}
+    </style>
 </head>
 <body>
-    <div class='container'>
-        <div class='card'>
-            <div class='header'>
-                Código de verificación para restablecer contraseña
+    <div class=""container"">
+        <div class=""card"">
+            <div class=""header"">
+                Código de Verificación
             </div>
-            <table class='logo'>
-                <tr>
-                    <td style='text-align: center;'>
-                        <img src='https://drive.google.com/uc?export=view&id=1qa4w5SGZrjrQOIinbCr9V9SwvRDgMHm2' alt='Logo FincAudita'>
-                    </td>
-                </tr>
-            </table>
-            <div class='content'>
-                <p>Estimado/a Usuario, {user.Username} </p>
+            <div class=""logo"">
+                <img src=""https://oficinavirtualderadicacion.sena.edu.co/oficinavirtual/Resources/logoSenaNaranja.png"" alt=""Logo AmbiHorario"">
+            </div>
+            <div class=""content"">
+                <p>Estimado/a <strong>{user.Username}</strong>,</p>
                 <p>Hemos recibido una solicitud para restablecer su contraseña. Su código de verificación es:</p>
-                <div class='code'>
+                <div class=""code"">
                     {codigoAleatorio}
                 </div>
-                <p>Por favor, use este código para continuar con el proceso de cambio de contraseña.</p>
-                <p>Si usted no solicitó este cambio, ignore este correo.</p>
-                <p>Saludos,<br>El equipo de soporte de FincAudita</p>
+                <p>Por favor, use este código para completar el proceso de cambio de contraseña.</p>
+                <p>Si no solicitó este cambio, ignore este mensaje.</p>
+                <p>Saludos,<br>El equipo de soporte de <strong>AmbiHorario</strong></p>
             </div>
-            <div class='footer'>
-                <p>*Este correo ha sido generado automáticamente, por favor no responda al mismo.*</p>
+            <div class=""footer"">
+                <p>*Este correo se ha generado automáticamente, por favor no responda.*</p>
             </div>
         </div>
     </div>
 </body>
-</html>"
+</html>
+"
             };
 
             bool emailEnviado = await emailService.SendEmail(emailDto);
@@ -184,35 +239,37 @@ namespace Service.Implements.Security
             {
                 Para = person.Email,
                 Asunto = "¡Bienvenido a AmbiHorario!",
-                Contenido = $@"<!DOCTYPE html>
-<html lang='es'>
+                Contenido = $@"
+<!DOCTYPE html>
+<html lang=""es"">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
     <title>Bienvenido a AmbiHorario</title>
- 
 </head>
-<body>
-    <div class='container'>
-        <div class='header'>
-            <img src='' alt='Logo FincAudita'>
-            <h1>¡Bienvenido a AmbiHorario!</h1>
-        </div>
-        <div class='content' style='padding: 20px;'>
-            <h2>Hola, {save.Username} 👋</h2>
-            <p>
-                Nos complace darte la bienvenida a <span class='highlight'>AmbiHorario</span>, 
-                la plataforma que transformará la manera en que gestionas los ambientes y horarios para los instructores.
-            </p>
-            <p>
-               Ahora puedes acceder a tu cuenta y comenzar a gestionar los ambientes y horarios 
-                de manera más rápida, eficiente y segura. Explora todas nuestras funcionalidades y comienza a 
-                optimizar tus procesos hoy mismo.
-            </p>
-            <a href='#iniciar-sesion' class='btn'>Iniciar Sesión</a>
-        </div>
-        <div class='footer'>
-            <p>&copy; 2024 AmbiHorario | Todos los derechos reservados</p>
+<body style=""font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; background-color: #ffffff; color: #333;"">
+    <div style=""width: 100%; padding: 20px;"">
+        <div style=""max-width: 500px; margin: 0 auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; background-color: #ffffff; border: 1px solid #e0e0e0;"">
+            <div style=""text-align: center;"">
+                <img src=""https://oficinavirtualderadicacion.sena.edu.co/oficinavirtual/Resources/logoSenaNaranja.png"" alt=""Logo AmbiHorario"" style=""max-width: 150px; margin-bottom: 15px;"">
+                <h1 style=""font-size: 24px; font-weight: bold; color: #5EB319; margin: 0;"">¡Bienvenido a AmbiHorario!</h1>
+            </div>
+            <div style=""font-size: 16px; line-height: 1.6; padding: 20px 0;"">
+                <h2 style=""color: #333;"">Hola, {save.Username} 👋</h2>
+                <p>
+                    Nos complace darte la bienvenida a <span style=""color: #5EB319; font-weight: bold;"">AmbiHorario</span>, 
+                    la plataforma que transformará la manera en que gestionas los ambientes y horarios para los instructores.
+                </p>
+                <p>
+                   Ahora puedes acceder a tu cuenta y comenzar a gestionar los ambientes y horarios 
+                    de manera más rápida, eficiente y segura. Explora todas nuestras funcionalidades y comienza a 
+                    optimizar tus procesos hoy mismo.
+                </p>
+                <a href=""#iniciar-sesion"" style=""display: inline-block; padding: 12px 20px; margin-top: 15px; text-decoration: none; font-size: 16px; font-weight: bold; border-radius: 5px; background-color: #5EB319; color: #ffffff; text-align: center;"">Iniciar Sesión</a>
+            </div>
+            <div style=""font-size: 12px; padding-top: 15px; color: #777;"">
+                <p>&copy; 2024 AmbiHorario | Todos los derechos reservados</p>
+            </div>
         </div>
     </div>  
 </body>

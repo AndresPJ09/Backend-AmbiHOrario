@@ -96,16 +96,16 @@ namespace WebA.Controllers.Implements.Parameter
         {
             // Definir las horas permitidas
             TimeSpan horaMinima = TimeSpan.FromHours(6); // 6:00 AM
-            TimeSpan horaMaxima = TimeSpan.FromHours(18); // 6:00 PM
+            TimeSpan horaMaxima = TimeSpan.FromHours(22); // 10:00 PM
 
             if (horaIngreso.TimeOfDay < horaMinima || horaIngreso.TimeOfDay > horaMaxima)
             {
-                throw new Exception("La hora de ingreso debe estar entre las 6:00 AM y las 6:00 PM.");
+                throw new Exception("La hora de ingreso debe estar entre las 6:00 AM y las 10:00 PM.");
             }
 
             if (horaEgreso.TimeOfDay < horaMinima || horaEgreso.TimeOfDay > horaMaxima)
             {
-                throw new Exception("La hora de egreso debe estar entre las 6:00 AM y las 6:00 PM.");
+                throw new Exception("La hora de egreso debe estar entre las 6:00 AM y las 10:00 PM.");
             }
 
             if (horaIngreso >= horaEgreso)

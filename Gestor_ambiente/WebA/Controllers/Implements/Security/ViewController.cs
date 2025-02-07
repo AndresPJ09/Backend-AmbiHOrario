@@ -105,15 +105,7 @@ namespace WebA.Controllers.Implements.Security
             }
 
             // Validar Description: máximo 100 caracteres y solo letras y signos comunes
-            if (string.IsNullOrWhiteSpace(view.Description) || view.Description.Length > 100)
-            {
-                throw new Exception("La descripción no puede estar vacía y no debe superar los 100 caracteres.");
-            }
-
-            if (!Regex.IsMatch(view.Description, @"^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s.,;!?]+$"))
-            {
-                throw new Exception("La descripción solo puede contener letras, espacios y signos comunes.");
-            }
+            
 
             // Validar Route: debe comenzar con "/" y solo permitir letras
             if (string.IsNullOrWhiteSpace(view.Route) || !view.Route.StartsWith("/"))

@@ -37,7 +37,7 @@ namespace Service.Implements.Operational
             horarioDto.Hora_ingreso = horario.Hora_ingreso;
             horarioDto.Hora_egreso = horario.Hora_egreso;
             horarioDto.Horas = horario.Horas;
-            horarioDto.Validación = horario.Validación;
+            horarioDto.Validacion = horario.Validacion;
             horarioDto.Observaciones = horario.Observaciones;
             horarioDto.State = horario.State;
             return horarioDto;
@@ -58,7 +58,7 @@ namespace Service.Implements.Operational
                 Hora_ingreso = horario.Hora_ingreso,
                 Hora_egreso = horario.Hora_egreso,
                 Horas = horario.Horas,
-                Validación = horario.Validación,
+                Validacion = horario.Validacion,
                 Observaciones = horario.Observaciones,
                 State = horario.State,
             });
@@ -152,7 +152,7 @@ namespace Service.Implements.Operational
             horario.AmbienteId = entity.AmbienteId;
             horario.PeriodoId = entity.PeriodoId;
             horario.Jornada_programa = entity.Jornada_programa;
-            horario.Validación = entity.Validación;
+            horario.Validacion = entity.Validacion;
             horario.Horas = entity.Horas;
             horario.Hora_ingreso = entity.Hora_ingreso;
             horario.Hora_egreso = entity.Hora_egreso;

@@ -4232,7 +4232,7 @@
             "type": "string",
             "format": "date-time"
           },
-          "validación": {
+          "validacion": {
             "type": "string",
             "nullable": true
           },

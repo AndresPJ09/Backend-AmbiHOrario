@@ -64,7 +64,6 @@ namespace WebA.Controllers.Implements.Parameter
             {
                 return BadRequest();
             }
-
             try
             {
                 await business.Update(periodo);

@@ -55,7 +55,7 @@ namespace Service.Implements.Operational
         {
             if (entity.Fecha_inicio_Ac < DateTime.Now.Date || entity.Fecha_fin_Ac < DateTime.Now.Date)
             {
-                throw new Exception("Las fechas no pueden ser anteriores a la fecha actual.");
+                throw new Exception("La fecha de fin no puede ser anterior a la fecha actual.");
             }
             if (entity.Fecha_inicio_Ac > entity.Fecha_fin_Ac)
             {
@@ -82,7 +82,7 @@ namespace Service.Implements.Operational
             {
                 if (entity.Fecha_inicio_Ac < DateTime.Now.Date || entity.Fecha_fin_Ac < DateTime.Now.Date)
                 {
-                    throw new Exception("Las fechas no pueden ser anteriores a la fecha actual.");
+                    throw new Exception("La fecha de inicio o fin no puede ser anterior a la fecha actual.");
                 }
                 if (entity.Fecha_inicio_Ac > entity.Fecha_fin_Ac)
                 {
@@ -93,7 +93,14 @@ namespace Service.Implements.Operational
             actividad = mapearDatos(actividad, entity);
             actividad.UpdatedAt = DateTime.Now;
 
-            await data.Update(actividad);
+            try
+            {
+                await data.Update(actividad);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error al actualizar la actividad: {ex.Message}");
+            }
         }
 
         public async Task Delete(int id)
