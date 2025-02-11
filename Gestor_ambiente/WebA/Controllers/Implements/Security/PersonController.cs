@@ -119,7 +119,7 @@ namespace WebA.Controllers.Implements.Security
             }
 
             // Validar Email
-            if (string.IsNullOrWhiteSpace(entity.Email) || entity.Email.Length > 100)
+            if (string.IsNullOrWhiteSpace(entity.Email) || entity.Email.Length > 50)
             {
                 throw new Exception("El correo electrónico no puede estar vacío y no debe superar los 100 caracteres.");
             }

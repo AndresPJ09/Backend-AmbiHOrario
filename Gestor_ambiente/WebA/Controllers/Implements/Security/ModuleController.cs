@@ -120,11 +120,6 @@ namespace WebA.Controllers.Implements.Security
                 throw new Exception("La descripción del módulo no puede superar los 100 caracteres.");
             }
 
-            if (!System.Text.RegularExpressions.Regex.IsMatch(entity.Description, @"^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$"))
-            {
-                throw new Exception("La descripción del módulo solo puede contener letras y espacios.");
-            }
-
             // Validar la posición
             if (entity.Position <= 0)
             {
